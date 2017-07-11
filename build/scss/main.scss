@@ -1,0 +1,213 @@
+@import "bourbon";
+@import "components/vars.scss";
+@import "components/normalize.scss";
+@import "components/fonts.scss";
+
+*:focus::-webkit-input-placeholder {color: transparent}
+*:focus::-moz-placeholder          {color: transparent}
+*:focus:-moz-placeholder           {color: transparent}
+*:focus:-ms-input-placeholder      {color: transparent}
+
+*::-webkit-input-placeholder {
+	color: #fff;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #fff;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #fff;
+	opacity: 1;
+}
+
+*:-ms-input-placeholder {
+	color: #fff;
+	opacity: 1;
+}
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+	color: #fff;
+}
+body input:required:valid,
+body textarea:required:valid {
+	color: #fff;
+}
+*::-webkit-scrollbar-track {
+	background-color: rgba(204,204,204, .1);
+}
+*::-webkit-scrollbar {
+	width: .6rem;
+	height: .6rem;
+	background-color: rgba(204,204,204, .1);
+}
+*::-webkit-scrollbar-thumb {
+	background-color: rgba(0,0,0, .6);
+}
+body::-webkit-scrollbar {
+	width: 1rem;
+	height: 1rem;
+}
+
+*,
+*:before,
+*:after{
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+	font-size: 10px;
+}
+body {
+	position: relative;
+	min-width: 320px;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-size: 1.8rem;
+	line-height: 1.4;
+	font-weight: 400;
+	font-family: 'Avenir Next Cyr', sans-serif;
+	color: #000;
+	background-color: #fff;
+	-moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	&:before, &:after {
+		content: '';
+		position: fixed;
+		z-index: 1000;
+		top: 10rem;
+		bottom: 10rem;
+		width: 4px;
+		background-color: $red;
+	}
+	&:before {
+		left: 10rem;
+	}
+	&:after {
+		right: 10rem;
+	}
+}
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.hidden {
+	display: none;
+}
+a {
+	outline: none;
+}
+.section {
+	padding: 10rem;
+}
+.title {
+	margin: 0;
+}
+h2.title {
+	font-size: 4.5rem;
+}
+h3.title {
+	font-size: 3.5rem;
+}
+h4.title {
+	font-size: 2.5rem;
+}
+.button {
+	@include btn;
+	position: relative;
+	margin-right: 6rem;
+	padding: 2rem 4rem;
+	box-shadow: inset 0 0 0 3px $beige;
+	color: #fff;
+	font-size: 1.8rem;
+	font-family: inherit;
+	background-color: $red;
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 3px;
+		bottom: 0;
+		width: 0;
+		transform: translateX(100%);
+		box-shadow: inset 0 0 0 3px $beige;
+		transition: all .5s ease;
+	}
+	&:after {
+		content: '';
+		position: absolute;
+		right: 5px;
+		top: 50%;
+		transform: translateY(-50%) rotate(-45deg);
+		width: 2.2rem;
+		height: .8rem;
+		border-left: 2px solid $red;
+		border-bottom: 2px solid $red;
+		opacity: 0;
+		transition: all .5s ease;
+	}
+	&:hover, &:active {
+		&:before {
+			width: 6.6rem;
+		}
+		&:after {
+			right: -4rem;
+			opacity: 1;
+		}
+	}
+}
+@media only screen and (max-width : 1600px) {
+
+}
+@media only screen and (max-width : 1400px) {
+
+}
+
+@media only screen and (max-width : 1200px) {
+
+}
+
+@media only screen and (max-width : 960px) {
+
+}
+
+@media only screen and (max-width : 768px) {
+
+}
+
+@media only screen and (max-width : 640px) {
+
+}
+
+@media only screen and (max-width : 480px) {
+
+}
+
+@media only screen and (max-width : 360px) {
+
+}
+
+
+//Custom Styles Here
+@import "components/header.scss";
+@import "components/header-menu.scss";
+
+@import "components/footer.scss";
+
+//@import "build/scss/components/magnific-popup.scss";
+
+//ALWAYS END
+// @import "components/media.scss";
+
+//Load Libs SASS
+// @import "html/libs/animate/animate.sass";
+//@import "html/libs/OwlCarousel2-2.2.1/dist/assets/owl.carousel.min";
+//@import "html/libs/superfish/dist/css/superfish";
+//@import "html/libs/font-awesome/scss/font-awesome.scss";
+//@import "html/libs/jQuery.mmenu/dist/css/jquery.mmenu.all";
+//@import "html/libs/magnific-popup/dist/magnific-popup";

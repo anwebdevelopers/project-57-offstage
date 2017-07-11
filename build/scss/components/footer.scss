@@ -1,0 +1,49 @@
+.footer {
+    position: fixed;
+    z-index: 1000;
+    left: 10rem;
+    bottom: 0;
+    right: 10rem;
+    height: 10rem;
+    border-top: 4px solid $red;
+    color: #fff;
+}
+.footer__logo {
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    img {
+        max-width: 100%;
+        width: auto;
+        height: auto;
+    }
+}
+.footer__button-scroll {
+    @include btn;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    width: 1.8rem;
+    height: 1.8rem;
+    border-left: 1px solid $beige;
+    border-bottom: 1px solid $beige;
+    transition: all .5s ease;
+    &:hover, &:active {
+        border-color: $red;
+    }
+}
+.footer__social {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    font-size: 1.4rem;
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+}
