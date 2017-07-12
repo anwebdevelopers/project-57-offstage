@@ -1,0 +1,38 @@
+.participants {
+    background-image: url(../img/bg-participants.png);
+    color: #000;
+}
+.participants__inner {
+    @extend .inner;
+    background-image: url(../img/bg-participants-inner.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.participants__title {
+    @extend .title;
+}
+.participants__list {
+    margin: 4vh 50% 0 0;
+    padding: 0;
+    list-style: none;
+
+    font-size: 1.8rem;
+    font-weight: 500;
+    li {
+        position: relative;
+        padding: 0 0 0 2rem;
+        margin: 1vh 0 0 0;
+        &:first-child {
+            margin-top: 0;
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            top: 1rem;
+            left: 0;
+            border: .4rem solid transparent;
+            border-left: .7rem solid $red;
+        }
+    }
+}

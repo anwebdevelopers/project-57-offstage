@@ -1,0 +1,37 @@
+.profit {
+    background-image: url(../img/bg-profit.jpg);
+    color: #fff;
+}
+.profit__inner {
+    @extend .inner;
+}
+.profit__title {
+    @extend .title;
+    color: $beige;
+}
+.profit__list {
+    margin: 6vh 0 0 0;
+    padding: 0;
+    list-style: none;
+
+    column-count: 2;
+    column-gap: 5vw;
+    font-size: 2rem;
+    li {
+        break-inside: avoid;
+        position: relative;
+        padding: 0 0 0 2rem;
+        margin: 3vh 0 0 0;
+        &:first-child {
+            margin-top: 0;
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            top: 1rem;
+            left: 0;
+            border: .4rem solid transparent;
+            border-left: .7rem solid $red;
+        }
+    }
+}

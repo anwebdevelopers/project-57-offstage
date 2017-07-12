@@ -1,0 +1,57 @@
+.about {
+
+}
+.about__content {
+    flex: 0 0 auto;
+    width: 60%;
+    padding: 6vh 6%;
+}
+.about__title {
+    @extend .title;
+}
+.about__text {
+    margin: 6vh 0 0 0;
+    font-size: 2rem;
+    font-weight: 500;
+    > :first-child {
+        &:before {
+            content: '';
+            display: inline-block;
+            vertical-align: baseline;
+            margin: 0 .5rem 0 0;
+            border: .5rem solid transparent;
+            border-left: .7rem solid $red;
+        }
+    }
+    p {
+        margin: 4vh 0 0 0;
+    }
+    strong {
+        color: $red;
+    }
+}
+.about__form {
+    flex: 0 0 auto;
+    width: 40%;
+    padding: 8vh 3%;
+    color: #fff;
+    background-image: url(../img/bg-about-form.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.about__form-title {
+    @extend .form__title;
+}
+.about__form-text {
+    @extend .form__text;
+}
+.about__form-input {
+    @extend .form__input;
+}
+.about__form-check {
+    @extend .form__check;
+}
+.about__form-submit {
+    @extend .form__submit;
+}

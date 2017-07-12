@@ -83,12 +83,18 @@ body {
 		bottom: 10rem;
 		width: 4px;
 		background-color: $red;
+		transition: all .5s ease;
 	}
 	&:before {
 		left: 10rem;
 	}
 	&:after {
 		right: 10rem;
+	}
+	&[data-color="light"] {
+		&:before, &:after {
+			background-color: #000;
+		}
 	}
 }
 .clearfix:after {
@@ -101,15 +107,35 @@ body {
 }
 a {
 	outline: none;
+	color: $red;
 }
 .section {
+	min-height: 100%;
 	padding: 10rem;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+
+	display: flex;
+}
+.inner {
+	flex: 0 0 auto;
+    width: 100%;
+	padding: 6vh 6%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .title {
 	margin: 0;
 }
 h2.title {
 	font-size: 4.5rem;
+	&:after {
+		content: ':';
+		color: $red;
+	}
 }
 h3.title {
 	font-size: 3.5rem;
@@ -161,19 +187,27 @@ h4.title {
 		}
 	}
 }
-@media only screen and (max-width : 1600px) {
-
+@media only screen and (max-width : 1600px), only screen and (max-height : 820px) {
+	html {
+		font-size: 9.5px;
+	}
 }
-@media only screen and (max-width : 1400px) {
-
+@media only screen and (max-width : 1400px), only screen and (max-height : 770px) {
+	html {
+		font-size: 9px;
+	}
 }
 
-@media only screen and (max-width : 1200px) {
-
+@media only screen and (max-width : 1200px), only screen and (max-height : 720px) {
+	html {
+		font-size: 8.5px;
+	}
 }
 
-@media only screen and (max-width : 960px) {
-
+@media only screen and (max-width : 960px), only screen and (max-height : 670px) {
+	html {
+		font-size: 8px;
+	}
 }
 
 @media only screen and (max-width : 768px) {
@@ -196,7 +230,11 @@ h4.title {
 //Custom Styles Here
 @import "components/header.scss";
 @import "components/header-menu.scss";
-
+@import "components/home.scss";
+@import "components/about.scss";
+@import "components/profit.scss";
+@import "components/participants.scss";
+@import "components/themes.scss";
 @import "components/footer.scss";
 
 //@import "build/scss/components/magnific-popup.scss";

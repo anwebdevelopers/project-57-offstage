@@ -18,7 +18,8 @@
     padding: 0 0 0 4rem;
     font-size: 1.6rem;
     line-height: 1;
-    font-weight: 400;
+    font-weight: 500;
+    letter-spacing: .05em;
     font-family: inherit;
     color: inherit;
     transition: all 0.5s ease;
@@ -49,23 +50,7 @@
 
     &:active,
     &:hover {
-        &:before {
-            animation-name: menu-button;
-            animation-duration: 0.3s;
-            background-color: $red;
-        }
-
-        span {
-            animation-name: menu-button;
-            animation-duration: 0.3s;
-            animation-delay: 0.1s;
-            background-color: $red;
-        }
-
-        &:after {
-            animation-name: menu-button;
-            animation-duration: 0.3s;
-            animation-delay: 0.2s;
+        &:before,span,&:after {
             background-color: $red;
         }
     }
@@ -77,13 +62,12 @@
             &:after,
             &:before,
             span {
-                animation: none;
                 background-color: $red;
             }
         }
 
         span {
-            display: none;
+            opacity: 0;
         }
 
         &:before {
@@ -97,19 +81,7 @@
         }
     }
 }
-@keyframes menu-button {
-    0% {
-        transform: scaleX(1);
-    }
 
-    50% {
-        transform: scaleX(.7);
-    }
-
-    100% {
-        transform: scaleX(1);
-    }
-}
 .header__logo {
     margin: 0;
     position: absolute;
@@ -125,6 +97,7 @@
         flex: 1 1 0;
         height: 4px;
         background-color: $red;
+        transition: all .5s ease;
     }
     &:before {
         margin-right: -1rem;
@@ -132,10 +105,13 @@
     &:after {
         margin-left: -1rem;
     }
-    img {
+    svg{
+        z-index: 1;
         flex: 0 0 auto;
         width: 17rem;
-        height: auto;
+        height: 7.5rem;
+        fill: $red;
+        transition: all .5s ease;
     }
 }
 .header__callback {
@@ -146,6 +122,8 @@
     transform: translateY(-50%);
 
     font-size: 1.6rem;
+    font-weight: 500;
+    letter-spacing: .05em;
 }
 .header__callback-link {
     text-decoration: none;
@@ -163,5 +141,77 @@
     transition: all .5s ease;
     &:hover, &:active {
         color: $red;
+    }
+}
+
+.pagination {
+    position: fixed;
+    z-index: 999;
+    left: 4.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    a {
+        display: block;
+        width: 1rem;
+        height: 1rem;
+        margin: 3vh 0 0 0;
+        border: .3rem solid transparent;
+        border-radius: 50%;
+        background-color: $red;
+        background-clip: content-box;
+        transition: all .5s ease;
+        &:hover, &:active, &.active {
+            background-color: $beige;
+        }
+        &.active {
+            border: .3rem solid transparent;
+            box-shadow: 0 0 0 1px $beige;
+        }
+    }
+}
+
+body[data-color="light"] {
+    .header {
+        color: #000;
+    }
+    .header__button-menu {
+        &:before,
+        &:after,
+        span {
+            background-color: $red;
+        }
+        &:hover, &:active {
+            &:before,
+            &:after,
+            span {
+                background-color: currentColor;
+            }
+        }
+    }
+
+    .header__logo {
+        &:before, &:after {
+            background-color: currentColor;
+        }
+        svg {
+            fill: currentColor;
+        }
+    }
+    .header__callback-button {
+        color: $red;
+        &:hover, &:active {
+            color: currentColor;
+        }
+    }
+    .pagination {
+        a {
+            &:hover, &:active, &.active {
+                background-color: currentColor;;
+            }
+            &.active {
+                border: .3rem solid transparent;
+                box-shadow: 0 0 0 1px currentColor;;
+            }
+        }
     }
 }

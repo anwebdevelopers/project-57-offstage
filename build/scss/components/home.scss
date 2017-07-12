@@ -1,0 +1,56 @@
+.home {
+    background-image: url(../img/bg-home.jpg);
+}
+.home__inner {
+    @extend .inner;
+}
+
+.home__date {
+    margin: 0 2rem 0 0;
+    font-size: 3rem;
+    font-weight: 600;
+    color: $beige;
+    span {
+        &:after {
+            content: '';
+            display: inline-block;
+            vertical-align: middle;
+            width: .5rem;
+            height: .5rem;
+            margin: 0 .5rem;
+            border-radius: 50%;
+            background-color: $red;
+        }
+    }
+}
+.home__place {
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+    color: $red;
+}
+.home__title {
+    margin: 3vh 0 0 0;
+    font-size: 6rem;
+    line-height: 1;
+    text-transform: uppercase;
+    color: $beige;
+    strong {
+        font-size: 12rem;
+        color: $red;
+    }
+}
+.home__text {
+    margin: 2vh 0 0 0;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+    color: $beige;
+}
+.home__button {
+    @extend .button;
+    margin-top: 10vh;
+    align-self: flex-start;
+}

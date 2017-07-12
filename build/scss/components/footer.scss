@@ -6,6 +6,7 @@
     right: 10rem;
     height: 10rem;
     border-top: 4px solid $red;
+    transition: border-color .5s ease;
     color: #fff;
 }
 .footer__logo {
@@ -42,8 +43,26 @@
     transform: translateY(-50%);
 
     font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: .05em;
     a {
         text-decoration: none;
         color: inherit;
+        transition: all .5s ease;
+        &:hover, &:active {
+            color: $red;
+        }
+    }
+}
+body[data-color="light"] {
+    .footer {
+        color: #000;
+        border-color: currentColor;
+    }
+    .footer__button-scroll {
+        border-color: $red;
+        &:hover, &:active {
+            border-color: currentColor;
+        }
     }
 }
