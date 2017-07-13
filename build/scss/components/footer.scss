@@ -57,12 +57,12 @@
 body[data-color="light"] {
     .footer {
         color: #000;
-        border-color: currentColor;
+        border-color: #000;
     }
     .footer__button-scroll {
         border-color: $red;
         &:hover, &:active {
-            border-color: currentColor;
+            border-color: #000;
         }
     }
 }

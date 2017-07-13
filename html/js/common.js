@@ -5,6 +5,21 @@ $(function() {
     //$('html').removeClass('no-js')
 
 
+
+
+    //************************************************************
+    //MENU TOGGLE
+    //************************************************************
+
+    $('.header__button-menu').click(function() {
+        $(this).toggleClass('active');
+        $('.menu').fadeToggle(500).css('display', 'flex');
+        $('body').attr('data-color', $('.header__button-menu').hasClass('active') ? 'dark' : $('.section.active').attr('data-color'));
+    });
+
+
+
+
     //************************************************************
     //SECTION SCROLL
     //************************************************************
@@ -56,13 +71,49 @@ $(function() {
     });
 
     //************************************************************
-    //MENU TOGGLE
+    //SLIDER
     //************************************************************
+    var $speakersBox = $('.speakers__box');
+    $speakersBox.addClass('owl-carousel');
 
-    $('.header__button-menu').click(function() {
-        $(this).toggleClass('active');
-        $('.menu').fadeToggle(500).css('display', 'flex');
-        $('body').attr('data-color', $('.header__button-menu').hasClass('active') ? 'dark' : $('.section.active').attr('data-color'));
+    function speakersWrap(count) {
+        $('.speakers__item').unwrap('.speakers__wrap');
+        while( $speakersBox.children(':not(.speakers__wrap)' ).length){
+            $speakersBox.children(':not(.speakers__wrap):lt('+ count +')').wrapAll('<div class="speakers__wrap">');
+        }
+    }
+
+    function optionsOwl(count) {
+        return {
+            loop: true,
+            items: 1,
+            nav: true,
+            navText: '',
+            autoplayTimeout: 5000,
+            autoplay: true,
+            smartSpeed: 1200,
+            autoHeight: true,
+            onInitialize: speakersWrap(count),
+            onInitialized: function() { $.scrollify.update(); }
+        }
+    }
+
+    function initialOwl() {
+        var w = $(window).width(),
+            size = $speakersBox.attr('data-size');
+        if (w <= 360 && size !== '360') {
+            $speakersBox.trigger('destroy.owl.carousel').owlCarousel(optionsOwl(1)).attr('data-size', '360');
+        } else if (w > 360 && w <= 640 && size !== '640') {
+            $speakersBox.trigger('destroy.owl.carousel').owlCarousel(optionsOwl(2)).attr('data-size', '640');
+        } else if (w > 640 && w <= 960 && size !== '960') {
+            $speakersBox.trigger('destroy.owl.carousel').owlCarousel(optionsOwl(4)).attr('data-size', '960');
+        } else if (w > 960 && size !== '960+'){
+            $speakersBox.trigger('destroy.owl.carousel').owlCarousel(optionsOwl(9)).attr('data-size', '960+');
+        }
+    }
+    initialOwl();
+    $(window).resize(function() {
+        initialOwl();
     });
 
 });

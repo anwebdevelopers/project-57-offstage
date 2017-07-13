@@ -117,6 +117,9 @@ a {
 	background-repeat: no-repeat;
 
 	display: flex;
+	&[data-color="dark"] {
+		background-color: #3e3a38;
+	}
 }
 .inner {
 	flex: 0 0 auto;
@@ -129,6 +132,7 @@ a {
 }
 .title {
 	margin: 0;
+	line-height: 1;
 }
 h2.title {
 	font-size: 4.5rem;
@@ -235,6 +239,8 @@ h4.title {
 @import "components/profit.scss";
 @import "components/participants.scss";
 @import "components/themes.scss";
+@import "components/speakers.scss";
+@import "components/price.scss";
 @import "components/footer.scss";
 
 //@import "build/scss/components/magnific-popup.scss";
@@ -244,7 +250,7 @@ h4.title {
 
 //Load Libs SASS
 // @import "html/libs/animate/animate.sass";
-//@import "html/libs/OwlCarousel2-2.2.1/dist/assets/owl.carousel.min";
+@import "html/libs/OwlCarousel2-2.2.1/dist/assets/owl.carousel.min";
 //@import "html/libs/superfish/dist/css/superfish";
 //@import "html/libs/font-awesome/scss/font-awesome.scss";
 //@import "html/libs/jQuery.mmenu/dist/css/jquery.mmenu.all";

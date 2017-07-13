@@ -154,7 +154,7 @@
         display: block;
         width: 1rem;
         height: 1rem;
-        margin: 3vh 0 0 0;
+        margin: 2rem 0 0 0;
         border: .3rem solid transparent;
         border-radius: 50%;
         background-color: $red;
@@ -184,33 +184,33 @@ body[data-color="light"] {
             &:before,
             &:after,
             span {
-                background-color: currentColor;
+                background-color: #000;
             }
         }
     }
 
     .header__logo {
         &:before, &:after {
-            background-color: currentColor;
+            background-color: #000;
         }
         svg {
-            fill: currentColor;
+            fill: #000;
         }
     }
     .header__callback-button {
         color: $red;
         &:hover, &:active {
-            color: currentColor;
+            color: #000;
         }
     }
     .pagination {
         a {
             &:hover, &:active, &.active {
-                background-color: currentColor;;
+                background-color: #000;;
             }
             &.active {
                 border: .3rem solid transparent;
-                box-shadow: 0 0 0 1px currentColor;;
+                box-shadow: 0 0 0 1px #000;;
             }
         }
     }

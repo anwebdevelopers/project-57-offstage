@@ -1,0 +1,127 @@
+.speakers {
+
+}
+.speakers__inner {
+    @extend .inner;
+}
+.speakers__title {
+    @extend .title;
+}
+.speakers__box {
+    margin: 1vh 0 0 0;
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    &.owl-carousel {
+        .owl-nav {
+            position: absolute;
+            top: 50%;
+            left: -6.5%;
+            right: -6.5%;
+            .owl-next, .owl-prev {
+                position: absolute;
+                top: 0;
+                width: 7rem;
+                height: 7rem;
+                overflow: hidden;
+                transform: translateY(-50%);
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    border-radius: 50%;
+                    background-color: $red;
+                    transition: all .5s ease;
+                }
+                &:after {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    width: 1.8rem;
+                    height: 1.8rem;
+                    border-left: 1px solid #fff;
+                    border-bottom: 1px solid #fff;
+                    transition: all .5s ease;
+                }
+                &:hover, &:active {
+                    &:before {
+                        background-color: #000;
+                    }
+                }
+            }
+            .owl-prev {
+                left: 0;
+                &:before {
+                    transform: translateX(-50%);
+                }
+                &:after {
+                    left: 0;
+                    transform: translate(60%, -50%) rotate(45deg);
+                }
+            }
+            .owl-next {
+                right: 0;
+                &:before {
+                    transform: translateX(50%);
+                }
+                &:after {
+                    right: 0;
+                    transform: translate(-60%, -50%) rotate(-135deg);
+                }
+            }
+        }
+    }
+}
+.speakers__wrap {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.speakers__item {
+    flex: 0 0 auto;
+    width: 30%;
+    margin: 3rem 3.33% 0 0;
+
+    display: flex;
+}
+.speakers__img {
+    flex: 0 0 auto;
+    width: 34%;
+    margin: 0;
+    img {
+        max-width: 100%;
+        border-radius: 50%;
+    }
+}
+.speakers__text {
+    flex: 0 0 auto;
+    align-self: center;
+    width: 60%;
+    margin: 0 0 0 6%;
+
+    position: relative;
+    padding: 0 0 2rem 0;
+    &:before {
+        content: '~';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        font-size: 3rem;
+        font-weight: 500;
+        line-height: 0;
+        color: $red;
+    }
+}
+.speakers__name {
+    margin: 0;
+    font-size: 1.5rem;
+}
+.speakers__position {
+    margin: 1rem 0 0 0;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
