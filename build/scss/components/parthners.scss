@@ -1,0 +1,152 @@
+.parthners {
+
+}
+.parthners__wrapper {
+    @extend .wrapper;
+}
+.parthners__content {
+    flex: 0 0 auto;
+    width: 60%;
+    padding: 4rem 6%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.parthners__title {
+    @extend .title;
+}
+.parthners__subtitle {
+    margin: 3rem 0 0 0;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.parthners__text {
+    margin: 3rem 0 0 0;
+    font-weight: 500;
+    > * {
+        margin: 2rem 0 0 0;
+    }
+    ul {
+        padding: 0;
+        list-style: none;
+        li {
+            position: relative;
+            padding: 0 0 0 2rem;
+            &:before {
+                content: '—';
+                position: absolute;
+                top: 0;
+                left: 0;
+                color: $red;
+                font-weight: 600;
+            }
+        }
+    }
+}
+.parthners__contacts {
+    position: relative;
+    flex: 0 0 auto;
+    width: 40%;
+    padding: 7rem 7rem;
+    color: #fff;
+    text-align: center;
+    background-image: linear-gradient($red, $red),linear-gradient($red, $red),linear-gradient($red, $red),linear-gradient($red, $red), url(../img/bg-parthners-contacts.jpg);
+    background-size: calc(100% - 10rem) 4px, 4px calc(100% - 10rem),calc(100% - 10rem) 4px,4px calc(100% - 10rem), cover;
+    background-position: center 5rem, calc(100% - 5rem) center,  center calc(100% - 5rem), 5rem center, center center;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.parthners__contacts-title {
+    margin: 0;
+    font-size: 3rem;
+}
+.parthners__contacts-text {
+    margin: 4rem 0 0 0;
+    font-size: 2.3rem;
+}
+.parthners__contacts-list {
+    position: relative;
+    margin: 2rem 0 0 0;
+    padding: 2rem 0 0 0;
+    list-style: none;
+    font-size: 2.3rem;
+    &:before {
+        content: '~';
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+        font-size: 3rem;
+        font-weight: 800;
+        font-family: Georgia;
+        line-height: 0;
+        color: $red;
+    }
+    li {
+        margin: .5rem 0 0 0;
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: all .5s ease;
+            &:hover, &:active {
+                color: $red;
+            }
+        }
+    }
+}
+.parthners__contacts-button {
+    @extend .button;
+    align-self: center;
+    margin-top: 6rem;
+}
+
+@media only screen and (max-width : 1600px), only screen and (max-height : 810px) {
+
+}
+@media only screen and (max-width : 1400px), only screen and (max-height : 760px) {
+    .parthners__content {
+        padding: 8rem 6%;
+    }
+    .parthners__contacts {
+        padding: 8rem 5rem;
+        background-size: calc(100% - 6rem) 4px, 4px calc(100% - 6rem),calc(100% - 6rem) 4px,4px calc(100% - 6rem), cover;
+        background-position: center 3rem, calc(100% - 3rem) center,  center calc(100% - 3rem), 3rem center, center center;
+    }
+}
+
+@media only screen and (max-width : 1200px), only screen and (max-height : 710px) {
+
+}
+
+@media only screen and (max-width : 960px), only screen and (max-height : 660px) {
+
+}
+
+@media only screen and (max-width : 768px) {
+    .parthners__content {
+        width: auto;
+        padding: 8rem 5%;
+    }
+    .parthners__contacts {
+        width: auto;
+        padding: 8rem 5rem;
+        background-size: calc(100% - 4rem) 4px, 4px calc(100% - 4rem),calc(100% - 4rem) 4px,4px calc(100% - 4rem), cover;
+        background-position: center 2rem, calc(100% - 2rem) center,  center calc(100% - 2rem), 2rem center, center center;
+    }
+}
+
+@media only screen and (max-width : 640px) {
+
+}
+
+@media only screen and (max-width : 480px) {
+
+}
+
+@media only screen and (max-width : 360px) {
+
+}

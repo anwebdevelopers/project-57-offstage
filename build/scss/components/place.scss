@@ -1,0 +1,99 @@
+.place {
+
+}
+.place__wrapper {
+    @extend .wrapper;
+}
+.place__content {
+    flex: 0 0 auto;
+    width: 60%;
+    padding: 4rem 6%;
+    background-image: url(../img/bg-place.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.place__title {
+    @extend .title;
+}
+.place__subtitle {
+    position: relative;
+    margin: 6rem 0 0 0;
+    padding: 0 0 0 2rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 1.3rem;
+        left: 0;
+        border: .4rem solid transparent;
+        border-left: .7rem solid $red;
+    }
+}
+.place__contacts {
+    margin: 3rem 0 0 0;
+    padding: 0;
+    list-style: none;
+    font-weight: 500;
+    li {
+        margin: .5rem 0 0 0;
+        address {
+            font-style: normal;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: all .5s ease;
+            &:hover, &:active {
+                color: $red;
+            }
+        }
+    }
+}
+
+.place__map {
+    flex: 0 0 auto;
+    width: 40%;
+    min-height: 50rem;
+}
+@media only screen and (max-width : 1600px), only screen and (max-height : 810px) {
+
+}
+@media only screen and (max-width : 1400px), only screen and (max-height : 760px) {
+
+}
+
+@media only screen and (max-width : 1200px), only screen and (max-height : 710px) {
+
+}
+
+@media only screen and (max-width : 960px), only screen and (max-height : 660px) {
+
+}
+
+@media only screen and (max-width : 768px) {
+    .place__content {
+        width: auto;
+        padding: 8rem 5%;
+    }
+    .place__map {
+        width: auto;
+    }
+}
+
+@media only screen and (max-width : 640px) {
+
+}
+
+@media only screen and (max-width : 480px) {
+
+}
+
+@media only screen and (max-width : 360px) {
+
+}

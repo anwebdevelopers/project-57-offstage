@@ -1,82 +1,89 @@
-.price {
-    background-image: url(../img/bg-price.jpg);
-    color: #fff;
+.program {
+
 }
-.price__wrapper {
+.program__wrapper {
     @extend .wrapper;
 }
-.price__inner {
+.program__inner {
     @extend .inner;
 }
-.price__title {
+.program__title {
     @extend .title;
-    color: $beige;
 }
-.price__box {
+.program__box {
     //margin: 4rem 0 0 0;
     display: flex;
     flex-wrap: wrap;
 }
-.price__item {
+.program__item {
     width: 47.5%;
-    margin: 4rem 2.5% 0 0;
+    margin: 3rem 2.5% 0 0;
 
     display: flex;
     flex-direction: column;
 }
-.price__item-title {
+.program__item-title {
     @extend .title;
     position: relative;
     padding: 0 0 0 3rem;
-    font-size: 3.5rem;
+    font-size: 1.8rem;
+    span {
+        color: $red;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+    }
     &:before {
         content: '~';
         position: absolute;
         left: 0;
-        top: 1.5rem;
+        top: 1.2rem;
         font-size: 3rem;
         font-weight: 800;
         font-family: Georgia;
         line-height: 0;
-        color: $beige;
+        color: #acaaa3;
     }
 }
-.price__item-list {
-    margin: 2rem 0 0 0;
+.program__item-list {
+    margin: 1rem 0 0 0;
     padding: 0;
     list-style: none;
+}
+.program__point {
+    margin: .5rem 0 0 0;
 
-    font-size: 1.8rem;
-    font-weight: 500;
-    >li {
-        break-inside: avoid;
-        position: relative;
-        padding: 0 0 0 2rem;
-        margin: .5rem 0 0 0;
-        &:first-child {
-            margin-top: 0;
-        }
-        &:before {
-            content: '';
-            position: absolute;
-            top: 1rem;
-            left: 0;
-            border: .4rem solid transparent;
-            border-left: .7rem solid $red;
-        }
+    display: flex;
+}
+.program__point-time {
+    flex: 0 0 auto;
+    width: 10rem;
+    font-size: 1.4rem;
+    line-height: 1.25;
+    font-weight: 600;
+}
+.program__point-content {
+    flex: 1 1 auto;
+    position: relative;
+    padding: 0 0 0 2rem;
+    font-size: 1.4rem;
+    line-height: 1.25;
+    color: #62615e;
+    &:before {
+        content: '';
+        position: absolute;
+        top: .4rem;
+        left: 0;
+        border: .4rem solid transparent;
+        border-left: .7rem solid $red;
     }
 }
-.price__item-cost {
-    margin: auto 0 0 0;
-    padding: 2rem 0 0 0;
-    font-size: 4.5rem;
-    font-weight: 600;
-    color: $beige;
+.program__point-title {
+    margin: 0;
+    font-size: 1.4rem;
 }
-.price__item-button {
-    @extend .button;
-    align-self: flex-start;
-    margin: 2rem 0 0 0;
+.program__point-text {
+    margin: 0;
+    font-weight: 500;
 }
 
 @media only screen and (max-width : 1600px), only screen and (max-height : 810px) {
@@ -95,10 +102,10 @@
 }
 
 @media only screen and (max-width : 768px) {
-    .price__box {
+    .program__box {
         display: block;
     }
-    .price__item {
+    .program__item {
         width: auto;
         margin: 6rem 0 0 0;
     }

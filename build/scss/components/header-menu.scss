@@ -1,5 +1,5 @@
 .menu {
-    @extend .section;
+    @extend .wrapper;
 
     position: fixed;
     z-index: 999;
@@ -18,8 +18,8 @@
 
 .menu__nav {
     flex: 0 0 auto;
-    width: 38%;
-    margin: 8vh 6%;
+    width: 43%;
+    margin: 4rem 6%;
     padding: 0 2%;
     overflow-y: auto;
     overflow-x: hidden;
@@ -28,12 +28,18 @@
 
     font-size: 2.5rem;
     font-weight: 500;
+
+    display: flex;
+    flex-direction: column;
+    >* {
+        flex: 0 0 auto;
+    }
     ul {
-        margin: 0;
+        margin: auto 0;
         padding: 0;
         list-style: none;
         li {
-            margin: 1.5vh 0 0 0;
+            margin: 1rem 0 0 0;
             &:first-child {
                 margin-top: 0;
             }
@@ -52,7 +58,7 @@
 .form__title {
     @extend .title;
     color: $beige;
-    font-weight: 500;
+    font-size: 3.5rem;
     line-height: 1;
 }
 .form__text {
@@ -61,7 +67,7 @@
 .form__input {
     position: relative;
     display: block;
-    margin: 2.5vh 0 0 0;
+    margin: 2rem 0 0 0;
     input {
         -webkit-appearance: none;
         -moz-appearance: none;
@@ -81,7 +87,7 @@
 }
 .form__check {
     display: block;
-    margin: 5vh 0 0 0;
+    margin: 3rem 0 0 0;
     font-size: 1.4rem;
     input {
         display: none;
@@ -115,19 +121,26 @@
 }
 .form__submit {
     @extend .button;
-    margin-top: 6vh;
+    margin-top: 3rem;
 }
 .menu__form {
     flex: 0 0 auto;
-    width: 45%;
+    width: 40%;
     margin: 0 0 0 5%;
-    padding: 8vh 4%;
+    padding: 4rem 4%;
     background-color: rgba(0,0,0, .5);
     overflow-y: auto;
     overflow-x: hidden;
+
+    display: flex;
+    flex-direction: column;
+    >* {
+        flex: 0 0 auto;
+    }
 }
 .menu__form-title {
     @extend .form__title;
+    margin-top: auto;
 }
 .menu__form-text {
     @extend .form__text;
@@ -140,4 +153,54 @@
 }
 .menu__form-submit {
     @extend .form__submit;
+    align-self: flex-start;
+    margin-bottom: auto;
+}
+
+@media only screen and (max-width : 1600px), only screen and (max-height : 810px) {
+
+}
+@media only screen and (max-width : 1400px), only screen and (max-height : 760px) {
+    .menu__nav {
+        margin: 12rem 6% 4rem 6%;
+    }
+    .menu__form {
+        padding: 12rem 4% 4rem 4%;
+    }
+}
+
+@media only screen and (max-width : 1200px), only screen and (max-height : 710px) {
+
+}
+
+@media only screen and (max-width : 960px), only screen and (max-height : 660px) {
+
+}
+
+@media only screen and (max-width : 768px) {
+
+}
+
+@media only screen and (max-width : 640px) {
+    .menu {
+        flex-direction: column;
+        overflow-y: auto;
+    }
+    .menu__nav {
+        margin: 12rem 8% 4rem 8%;
+        width: auto;
+    }
+    .menu__form {
+        width: auto;
+        margin: 0;
+        padding: 4rem 8%;
+    }
+}
+
+@media only screen and (max-width : 480px) {
+
+}
+
+@media only screen and (max-width : 360px) {
+
 }

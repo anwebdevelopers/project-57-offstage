@@ -1,0 +1,132 @@
+.organizers {
+
+}
+.organizers__wrapper {
+    @extend .wrapper;
+}
+.organizers__content {
+    flex: 0 0 auto;
+    width: 40%;
+    padding: 4rem 3%;
+    background-image: url(../img/bg-organizers-content.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    color: #fff;
+}
+.organizers__title {
+    @extend .title;
+}
+.organizers__text {
+    margin: 3rem 0 0 0;
+    line-height: 1.6;
+    font-weight: 500;
+    &:before {
+        content: '';
+        display: inline-block;
+        vertical-align: baseline;
+        margin: 0 .5rem 0 0;
+        border: .5rem solid transparent;
+        border-left: .7rem solid $red;
+    }
+    strong {
+        color: $red;
+    }
+}
+.organizers__subtitle,
+.organizers__events-subtitle {
+    margin: 3rem 0 0 0;
+    font-size: 2.4rem;
+    a {
+        text-decoration: none;
+        color: inherit;
+        transition: all .5s ease;
+        &:hover, &:active {
+            color: $red;
+        }
+    }
+}
+
+.organizers__events {
+    flex: 0 0 auto;
+    width: 60%;
+    padding: 4rem 6%;
+}
+.organizers__events-logo {
+    margin: 0;
+    img {
+        max-width: 100%;
+    }
+}
+.organizers__events-text {
+    margin: 3rem 0 0 0;
+    line-height: 1.6;
+    font-weight: 500;
+    strong {
+        color: $red;
+    }
+}
+.organizers__events-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+.organizers__events-item {
+    flex: 0 0 auto;
+    display: block;
+    text-decoration: none;
+    width: 28%;
+    margin: 3rem 5.33% 0 0;
+    img {
+        max-width: 100%;
+        transition: all .5s ease;
+    }
+    &:hover, &:active {
+        img {
+            transform: scale(.9);
+        }
+    }
+}
+
+@media only screen and (max-width : 1600px), only screen and (max-height : 810px) {
+
+}
+@media only screen and (max-width : 1400px), only screen and (max-height : 760px) {
+    .organizers__content {
+        padding: 8rem 3%;
+    }
+    .organizers__events {
+        padding: 8rem 6%;
+    }
+}
+
+@media only screen and (max-width : 1200px), only screen and (max-height : 710px) {
+
+}
+
+@media only screen and (max-width : 960px), only screen and (max-height : 660px) {
+
+}
+
+@media only screen and (max-width : 768px) {
+    .organizers__content,
+    .organizers__events {
+        width: auto;
+        padding: 8rem 5%;
+    }
+}
+
+@media only screen and (max-width : 640px) {
+
+}
+
+@media only screen and (max-width : 480px) {
+    .organizers__events-item {
+        width: 40%;
+        margin: 3rem 10% 0 0;
+    }
+}
+
+@media only screen and (max-width : 360px) {
+
+}

@@ -25,21 +25,6 @@
 <body>
 
 	<div class="menu">
-		<!-- <nav class="menu__nav">
-			<ul>
-				<li><a href="#">О конференции</a></li>
-				<li><a href="#">Что получат участники</a></li>
-				<li><a href="#">Участники</a></li>
-				<li><a href="#">Темы</a></li>
-				<li><a href="#">Спикеры</a></li>
-				<li><a href="#">Стоимость участи</a></li>
-				<li><a href="#">Программа</a></li>
-				<li><a href="#">Место проведения</a></li>
-				<li><a href="#">Партнеры</a></li>
-				<li><a href="#">Организаторы</a></li>
-				<li><a href="#">Дирекция</a></li>
-			</ul>
-		</nav> -->
 		<form class="menu__form">
 			<h3 class="menu__form-title">Заполните заявку на участие</h3>
 			<p class="menu__form-text">Оставьте заявку и мы свяжемся с вами.</p>
@@ -72,267 +57,281 @@
 	</header>
 
 	<section class="home section" data-name="Главная" data-color="dark">
-		<div class="home__inner">
-			<span class="home__date"><span>8/9</span><span>11</span>2017</span>
-			<span class="home__place">Место проведения</span>
-			<h1 class="home__title">Конференция<br><strong>OFFSTAGE</strong></h1>
-			<p class="home__text">Театральный маркетинг и работа со зрителями</p>
-			<a href="#" class="home__button">Купить билет</a>
+		<div class="home__wrapper">
+			<div class="home__inner">
+				<div class="home__dateplace">
+					<span class="home__date"><span>8/9</span><span>11</span>2017</span>
+					<span class="home__place">Место проведения</span>
+				</div>
+				<h1 class="home__title">Конференция<br><strong>OFFSTAGE</strong></h1>
+				<p class="home__text">Театральный маркетинг и работа со зрителями</p>
+				<a href="#" class="home__button">Купить билет</a>
+			</div>
 		</div>
 	</section>
 
 	<section class="about section" data-name="О конференции" data-color="light">
-		<div class="about__content">
-			<h2 class="about__title">О конференции</h2>
-			<div class="about__text">
-				<p>Современный театр наряду с другими учреждениями сферы досуга активно включен в конкурентную борьбу за зрителя и его время. В текущей экономической ситуации и в рамках основных направлений государственной политики по вопросам культуры факторы маркетингового и коммерческого успеха и пути их достижения становятся одним из ключевых для большинства учреждений искусства.</p><br><br>
-				<p><strong>Задача конференции</strong> - обсудить вопросы эффективных методов продвижения театрального продукта, опираясь на опыт коллег по цеху, представителей других направлений на рынке интертейнмента, партнеров и смежных организаций.</p>
+		<div class="about__wrapper">
+			<div class="about__content">
+				<h2 class="about__title">О конференции</h2>
+				<div class="about__text">
+					<p>Современный театр наряду с другими учреждениями сферы досуга активно включен в конкурентную борьбу за зрителя и его время. В текущей экономической ситуации и в рамках основных направлений государственной политики по вопросам культуры факторы маркетингового и коммерческого успеха и пути их достижения становятся одним из ключевых для большинства учреждений искусства.</p><br>
+					<p><strong>Задача конференции</strong> - обсудить вопросы эффективных методов продвижения театрального продукта, опираясь на опыт коллег по цеху, представителей других направлений на рынке интертейнмента, партнеров и смежных организаций.</p>
+				</div>
 			</div>
+			<form class="about__form">
+				<h3 class="about__form-title">Оставьте заявку  на участие в конференции</h3>
+				<label class="about__form-input">
+					<input type="text" placeholder="Имя">
+				</label>
+				<label class="about__form-input">
+					<input type="text" placeholder="Телефон">
+				</label>
+				<label class="about__form-input">
+					<input type="text" placeholder="E-mail">
+				</label>
+				<label class="about__form-check">
+					<input type="checkbox">
+					<span>Я согласен с политикой конфиденциональности</span>
+				</label>
+				<button class="about__form-submit" type="submit">Отправить</button>
+			</form>
 		</div>
-		<form class="about__form">
-			<h3 class="about__form-title">Оставьте заявку  на участие в конференции</h3>
-			<label class="about__form-input">
-				<input type="text" placeholder="Имя">
-			</label>
-			<label class="about__form-input">
-				<input type="text" placeholder="Телефон">
-			</label>
-			<label class="about__form-input">
-				<input type="text" placeholder="E-mail">
-			</label>
-			<label class="about__form-check">
-				<input type="checkbox">
-				<span>Я согласен с политикой конфиденциональности</span>
-			</label>
-			<button class="about__form-submit" type="submit">Отправить</button>
-		</form>
 	</section>
 
 	<section class="profit section" data-name="Что получат участники" data-color="dark">
-		<div class="profit__inner">
-			<h2 class="profit__title">Что получат участники</h2>
-			<ul class="profit__list">
-				<li>Обмен опытом с лучшими столичными и региональными экспертами в области театрального маркетинга;</li>
-				<li>Информацию об актуальных тенденциях и путях развития отрасли;</li>
-				<li>Реальные практики эффективного продвижения, работы с аудиторией, спонсорами и партнерами;</li>
-				<li>Полезные контакты в профессиональной сфере;</li>
-				<li>Возможности для поиска новых партнеров;</li>
-				<li>Общение с коллегами – единомышленниками и оппонентами;</li>
-			</ul>
+		<div class="profit__wrapper">
+			<div class="profit__inner">
+				<h2 class="profit__title">Что получат участники</h2>
+				<ul class="profit__list">
+					<li>Обмен опытом с лучшими столичными и региональными экспертами в области театрального маркетинга;</li>
+					<li>Информацию об актуальных тенденциях и путях развития отрасли;</li>
+					<li>Реальные практики эффективного продвижения, работы с аудиторией, спонсорами и партнерами;</li>
+					<li>Полезные контакты в профессиональной сфере;</li>
+					<li>Возможности для поиска новых партнеров;</li>
+					<li>Общение с коллегами – единомышленниками и оппонентами;</li>
+				</ul>
+			</div>
 		</div>
 	</section>
 
 	<section class="participants section" data-name="Участники" data-color="light">
-		<div class="participants__inner">
-			<h2 class="participants__title">Участники конференции</h2>
-			<ul class="participants__list">
-				<li>Представители  учреждений зрелищного искусства (театры, концертные залы, филармонии) – директора, заместители директора, специалисты по маркетингу, по работе со зрителями</li>
-				<li>Организаторы фестивалей, концертов</li>
-				<li>Независимые продюсеры и театральные агентства</li>
-				<li>Билетные операторы</li>
-				<li>Разработчики сайтов</li>
-				<li>Коммуникационные агентства</li>
-				<li>Бренды</li>
-				<li>Благотворительные фонды, поддерживающие искусство</li>
-				<li>СМИ</li>
-				<li>Профильные ВУЗы и курсы повышения квалификации</li>
-				<li>Представители государственных управленческих и законодательных структур</li>
-			</ul>
+		<div class="participants__wrapper">
+			<div class="participants__inner">
+				<h2 class="participants__title">Участники конференции</h2>
+				<ul class="participants__list">
+					<li>Представители  учреждений зрелищного искусства (театры, концертные залы, филармонии) – директора, заместители директора, специалисты по маркетингу, по работе со зрителями</li>
+					<li>Организаторы фестивалей, концертов</li>
+					<li>Независимые продюсеры и театральные агентства</li>
+					<li>Билетные операторы</li>
+					<li>Разработчики сайтов</li>
+					<li>Коммуникационные агентства</li>
+					<li>Бренды</li>
+					<li>Благотворительные фонды, поддерживающие искусство</li>
+					<li>СМИ</li>
+					<li>Профильные ВУЗы и курсы повышения квалификации</li>
+					<li>Представители государственных управленческих и законодательных структур</li>
+				</ul>
+			</div>
 		</div>
 	</section>
 
 	<section class="themes section" data-name="Темы" data-color="dark">
-		<div class="themes__inner">
-			<h2 class="themes__title">Темы конференции</h2>
-			<ul class="themes__list">
-				<li>Работа с аудиторией
-					<ul>
-						<li>выход на новую аудиторию, ее привлечение и рост;</li>
-						<li>исследование аудитории театра;</li>
-						<li>специфика работы со зрителем у музыкальных и нишевых театров и концертных залов;</li>
-						<li>детская аудитория;</li>
-						<li>посетители с ограниченными возможностями, привлечение их в театр, в том числе и к участию в спектаклях;</li>
-					</ul>
-				</li>
-				<li>Организация билетной программы, ценообразование, электронная продажа билетов</li>
-				<li>Театр в интернете (сайт театра и его задачи – контент, оформление, функции, обратная связь; социальные сети и их роль в продвижении театра и исследовании аудитории)</li>
-				<li>Ивент-маркетинг в учреждениях культуры (в т.ч. фестивали)</li>
-				<li>Работа со СМИ (специализированными и общественными) Когда пресс-релизы не работают.</li>
-				<li>Частные театры и антреприза: секрет выживания</li>
-				<li>Работа со спонсорами, примеры успешных интеграций</li>
-				<li>Маркетинг без бюджета</li>
-				<li>Фирменный стиль, сувенирная продукция</li>
-				<li>Профессиональное образование для театральных маркетологов</li>
-				<li>Дополнительные источники дохода театра (корпоративные программы в т.ч.)</li>
-				<li>Влияние законодательства на развитие маркетинга культуры</li>
-			</ul>
+		<div class="themes__wrapper">
+			<div class="themes__inner">
+				<h2 class="themes__title">Темы конференции</h2>
+				<ul class="themes__list">
+					<li>Работа с аудиторией
+						<ul>
+							<li>выход на новую аудиторию, ее привлечение и рост;</li>
+							<li>исследование аудитории театра;</li>
+							<li>специфика работы со зрителем у музыкальных и нишевых театров и концертных залов;</li>
+							<li>детская аудитория;</li>
+							<li>посетители с ограниченными возможностями, привлечение их в театр, в том числе и к участию в спектаклях;</li>
+						</ul>
+					</li>
+					<li>Организация билетной программы, ценообразование, электронная продажа билетов</li>
+					<li>Театр в интернете (сайт театра и его задачи – контент, оформление, функции, обратная связь; социальные сети и их роль в продвижении театра и исследовании аудитории)</li>
+					<li>Ивент-маркетинг в учреждениях культуры (в т.ч. фестивали)</li>
+					<li>Работа со СМИ (специализированными и общественными) Когда пресс-релизы не работают.</li>
+					<li>Частные театры и антреприза: секрет выживания</li>
+					<li>Работа со спонсорами, примеры успешных интеграций</li>
+					<li>Маркетинг без бюджета</li>
+					<li>Фирменный стиль, сувенирная продукция</li>
+					<li>Профессиональное образование для театральных маркетологов</li>
+					<li>Дополнительные источники дохода театра (корпоративные программы в т.ч.)</li>
+					<li>Влияние законодательства на развитие маркетинга культуры</li>
+				</ul>
+			</div>
 		</div>
 	</section>
 
 	<section class="speakers section" data-name="Спикеры" data-color="light">
-		<div class="speakers__inner">
-			<h2 class="speakers__title">Спикеры конференции</h2>
-			<div class="speakers__box">
-				<div class="speakers__item">
-					<figure class="speakers__img">
-						<img src="img/img-speakers1.png" alt="">
-					</figure>
-					<div class="speakers__text">
-						<h5 class="speakers__name">Кирилл Крок</h5>
-						<p class="speakers__position">Государственный академический театр имени Евгения Вахтангова, Директор</p>
+		<div class="speakers__wrapper">
+			<div class="speakers__inner">
+				<h2 class="speakers__title">Спикеры конференции</h2>
+				<div class="speakers__box">
+					<div class="speakers__item">
+						<figure class="speakers__img">
+							<img src="img/img-speakers1.png" alt="">
+						</figure>
+						<div class="speakers__text">
+							<h3 class="speakers__name">Кирилл Крок</h3>
+							<p class="speakers__position">Государственный академический театр имени Евгения Вахтангова, Директор</p>
+						</div>
 					</div>
-				</div>
-				<div class="speakers__item">
-					<figure class="speakers__img">
-						<img src="img/img-speakers2.png" alt="">
-					</figure>
-					<div class="speakers__text">
-						<h5 class="speakers__name">Виталий Виноградов</h5>
-						<p class="speakers__position">Виталий Виноградов Ticketland, <br>CEO</p>
+					<div class="speakers__item">
+						<figure class="speakers__img">
+							<img src="img/img-speakers2.png" alt="">
+						</figure>
+						<div class="speakers__text">
+							<h3 class="speakers__name">Виталий Виноградов</h3>
+							<p class="speakers__position">Виталий Виноградов Ticketland, <br>CEO</p>
+						</div>
 					</div>
-				</div>
-				<div class="speakers__item">
-					<figure class="speakers__img">
-						<img src="img/img-speakers3.png" alt="">
-					</figure>
-					<div class="speakers__text">
-						<h5 class="speakers__name">Алла Платонова</h5>
-						<p class="speakers__position">Пермский академический театр оперы и балета им. П. И. Чайковского, Директор по развитию</p>
+					<div class="speakers__item">
+						<figure class="speakers__img">
+							<img src="img/img-speakers3.png" alt="">
+						</figure>
+						<div class="speakers__text">
+							<h3 class="speakers__name">Алла Платонова</h3>
+							<p class="speakers__position">Пермский академический театр оперы и балета им. П. И. Чайковского, Директор по развитию</p>
+						</div>
 					</div>
-				</div>
-				<div class="speakers__item">
-					<figure class="speakers__img">
-						<img src="img/img-speakers4.png" alt="">
-					</figure>
-					<div class="speakers__text">
-						<h5 class="speakers__name">Софья Апфельбаум</h5>
-						<p class="speakers__position">Российский академический Молодежный театр, Директор</p>
+					<div class="speakers__item">
+						<figure class="speakers__img">
+							<img src="img/img-speakers4.png" alt="">
+						</figure>
+						<div class="speakers__text">
+							<h3 class="speakers__name">Софья Апфельбаум</h3>
+							<p class="speakers__position">Российский академический Молодежный театр, Директор</p>
+						</div>
 					</div>
-				</div>
-				<div class="speakers__item">
-					<figure class="speakers__img">
-						<img src="img/img-speakers5.png" alt="">
-					</figure>
-					<div class="speakers__text">
-						<h5 class="speakers__name">Наталья Афанасьева</h5>
-						<p class="speakers__position">Театр Наций, Заместитель директора по рекламе, маркетингу и работе со зрителями </p>
+					<div class="speakers__item">
+						<figure class="speakers__img">
+							<img src="img/img-speakers5.png" alt="">
+						</figure>
+						<div class="speakers__text">
+							<h3 class="speakers__name">Наталья Афанасьева</h3>
+							<p class="speakers__position">Театр Наций, Заместитель директора по рекламе, маркетингу и работе со зрителями </p>
+						</div>
 					</div>
-				</div>
-				<div class="speakers__item">
-					<figure class="speakers__img">
-						<img src="img/img-speakers1.png" alt="">
-					</figure>
-					<div class="speakers__text">
-						<h5 class="speakers__name">Кирилл Крок</h5>
-						<p class="speakers__position">Государственный академический театр имени Евгения Вахтангова, Директор</p>
+					<div class="speakers__item">
+						<figure class="speakers__img">
+							<img src="img/img-speakers1.png" alt="">
+						</figure>
+						<div class="speakers__text">
+							<h3 class="speakers__name">Кирилл Крок</h3>
+							<p class="speakers__position">Государственный академический театр имени Евгения Вахтангова, Директор</p>
+						</div>
 					</div>
-				</div>
-				<div class="speakers__item">
-					<figure class="speakers__img">
-						<img src="img/img-speakers2.png" alt="">
-					</figure>
-					<div class="speakers__text">
-						<h5 class="speakers__name">Виталий Виноградов</h5>
-						<p class="speakers__position">Виталий Виноградов Ticketland, <br>CEO</p>
+					<div class="speakers__item">
+						<figure class="speakers__img">
+							<img src="img/img-speakers2.png" alt="">
+						</figure>
+						<div class="speakers__text">
+							<h3 class="speakers__name">Виталий Виноградов</h3>
+							<p class="speakers__position">Виталий Виноградов Ticketland, <br>CEO</p>
+						</div>
 					</div>
-				</div>
-				<div class="speakers__item">
-					<figure class="speakers__img">
-						<img src="img/img-speakers3.png" alt="">
-					</figure>
-					<div class="speakers__text">
-						<h5 class="speakers__name">Алла Платонова</h5>
-						<p class="speakers__position">Пермский академический театр оперы и балета им. П. И. Чайковского, Директор по развитию</p>
+					<div class="speakers__item">
+						<figure class="speakers__img">
+							<img src="img/img-speakers3.png" alt="">
+						</figure>
+						<div class="speakers__text">
+							<h3 class="speakers__name">Алла Платонова</h3>
+							<p class="speakers__position">Пермский академический театр оперы и балета им. П. И. Чайковского, Директор по развитию</p>
+						</div>
 					</div>
-				</div>
-				<div class="speakers__item">
-					<figure class="speakers__img">
-						<img src="img/img-speakers4.png" alt="">
-					</figure>
-					<div class="speakers__text">
-						<h5 class="speakers__name">Софья Апфельбаум</h5>
-						<p class="speakers__position">Российский академический Молодежный театр, Директор</p>
+					<div class="speakers__item">
+						<figure class="speakers__img">
+							<img src="img/img-speakers4.png" alt="">
+						</figure>
+						<div class="speakers__text">
+							<h3 class="speakers__name">Софья Апфельбаум</h3>
+							<p class="speakers__position">Российский академический Молодежный театр, Директор</p>
+						</div>
 					</div>
-				</div>
-				<div class="speakers__item">
-					<figure class="speakers__img">
-						<img src="img/img-speakers1.png" alt="">
-					</figure>
-					<div class="speakers__text">
-						<h5 class="speakers__name">Кирилл Крок</h5>
-						<p class="speakers__position">Государственный академический театр имени Евгения Вахтангова, Директор</p>
+					<div class="speakers__item">
+						<figure class="speakers__img">
+							<img src="img/img-speakers1.png" alt="">
+						</figure>
+						<div class="speakers__text">
+							<h3 class="speakers__name">Кирилл Крок</h3>
+							<p class="speakers__position">Государственный академический театр имени Евгения Вахтангова, Директор</p>
+						</div>
 					</div>
-				</div>
-				<div class="speakers__item">
-					<figure class="speakers__img">
-						<img src="img/img-speakers2.png" alt="">
-					</figure>
-					<div class="speakers__text">
-						<h5 class="speakers__name">Виталий Виноградов</h5>
-						<p class="speakers__position">Виталий Виноградов Ticketland, <br>CEO</p>
+					<div class="speakers__item">
+						<figure class="speakers__img">
+							<img src="img/img-speakers2.png" alt="">
+						</figure>
+						<div class="speakers__text">
+							<h3 class="speakers__name">Виталий Виноградов</h3>
+							<p class="speakers__position">Виталий Виноградов Ticketland, <br>CEO</p>
+						</div>
 					</div>
-				</div>
-				<div class="speakers__item">
-					<figure class="speakers__img">
-						<img src="img/img-speakers3.png" alt="">
-					</figure>
-					<div class="speakers__text">
-						<h5 class="speakers__name">Алла Платонова</h5>
-						<p class="speakers__position">Пермский академический театр оперы и балета им. П. И. Чайковского, Директор по развитию</p>
+					<div class="speakers__item">
+						<figure class="speakers__img">
+							<img src="img/img-speakers3.png" alt="">
+						</figure>
+						<div class="speakers__text">
+							<h3 class="speakers__name">Алла Платонова</h3>
+							<p class="speakers__position">Пермский академический театр оперы и балета им. П. И. Чайковского, Директор по развитию</p>
+						</div>
 					</div>
-				</div>
-				<div class="speakers__item">
-					<figure class="speakers__img">
-						<img src="img/img-speakers4.png" alt="">
-					</figure>
-					<div class="speakers__text">
-						<h5 class="speakers__name">Софья Апфельбаум</h5>
-						<p class="speakers__position">Российский академический Молодежный театр, Директор</p>
+					<div class="speakers__item">
+						<figure class="speakers__img">
+							<img src="img/img-speakers4.png" alt="">
+						</figure>
+						<div class="speakers__text">
+							<h3 class="speakers__name">Софья Апфельбаум</h3>
+							<p class="speakers__position">Российский академический Молодежный театр, Директор</p>
+						</div>
 					</div>
-				</div>
-				<div class="speakers__item">
-					<figure class="speakers__img">
-						<img src="img/img-speakers5.png" alt="">
-					</figure>
-					<div class="speakers__text">
-						<h5 class="speakers__name">Наталья Афанасьева</h5>
-						<p class="speakers__position">Театр Наций, Заместитель директора по рекламе, маркетингу и работе со зрителями </p>
+					<div class="speakers__item">
+						<figure class="speakers__img">
+							<img src="img/img-speakers5.png" alt="">
+						</figure>
+						<div class="speakers__text">
+							<h3 class="speakers__name">Наталья Афанасьева</h3>
+							<p class="speakers__position">Театр Наций, Заместитель директора по рекламе, маркетингу и работе со зрителями </p>
+						</div>
 					</div>
-				</div>
-				<div class="speakers__item">
-					<figure class="speakers__img">
-						<img src="img/img-speakers1.png" alt="">
-					</figure>
-					<div class="speakers__text">
-						<h5 class="speakers__name">Кирилл Крок</h5>
-						<p class="speakers__position">Государственный академический театр имени Евгения Вахтангова, Директор</p>
+					<div class="speakers__item">
+						<figure class="speakers__img">
+							<img src="img/img-speakers1.png" alt="">
+						</figure>
+						<div class="speakers__text">
+							<h3 class="speakers__name">Кирилл Крок</h3>
+							<p class="speakers__position">Государственный академический театр имени Евгения Вахтангова, Директор</p>
+						</div>
 					</div>
-				</div>
-				<div class="speakers__item">
-					<figure class="speakers__img">
-						<img src="img/img-speakers2.png" alt="">
-					</figure>
-					<div class="speakers__text">
-						<h5 class="speakers__name">Виталий Виноградов</h5>
-						<p class="speakers__position">Виталий Виноградов Ticketland, <br>CEO</p>
+					<div class="speakers__item">
+						<figure class="speakers__img">
+							<img src="img/img-speakers2.png" alt="">
+						</figure>
+						<div class="speakers__text">
+							<h3 class="speakers__name">Виталий Виноградов</h3>
+							<p class="speakers__position">Виталий Виноградов Ticketland, <br>CEO</p>
+						</div>
 					</div>
-				</div>
-				<div class="speakers__item">
-					<figure class="speakers__img">
-						<img src="img/img-speakers3.png" alt="">
-					</figure>
-					<div class="speakers__text">
-						<h5 class="speakers__name">Алла Платонова</h5>
-						<p class="speakers__position">Пермский академический театр оперы и балета им. П. И. Чайковского, Директор по развитию</p>
+					<div class="speakers__item">
+						<figure class="speakers__img">
+							<img src="img/img-speakers3.png" alt="">
+						</figure>
+						<div class="speakers__text">
+							<h3 class="speakers__name">Алла Платонова</h3>
+							<p class="speakers__position">Пермский академический театр оперы и балета им. П. И. Чайковского, Директор по развитию</p>
+						</div>
 					</div>
-				</div>
-				<div class="speakers__item">
-					<figure class="speakers__img">
-						<img src="img/img-speakers4.png" alt="">
-					</figure>
-					<div class="speakers__text">
-						<h5 class="speakers__name">Софья Апфельбаум</h5>
-						<p class="speakers__position">Российский академический Молодежный театр, Директор</p>
+					<div class="speakers__item">
+						<figure class="speakers__img">
+							<img src="img/img-speakers4.png" alt="">
+						</figure>
+						<div class="speakers__text">
+							<h3 class="speakers__name">Софья Апфельбаум</h3>
+							<p class="speakers__position">Российский академический Молодежный театр, Директор</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -340,207 +339,386 @@
 	</section>
 
 	<section class="price section" data-name="Стоимость участия" data-color="dark">
-		<div class="price__inner">
-			<h2 class="price__title">Стоимость участия</h2>
-			<div class="price__box">
-				<div class="price__item">
-					<h3 class="price__item-title">Пакет участника №1</h3>
-					<ul class="price__item-list">
-						<li>2 дня конференции</li>
-						<li>Кофе брейки</li>
-						<li>Пакет материалов</li>
-						<li>Размещение логотипа на сайте</li>
-					</ul>
-					<div class="price__item-cost">12 000 р.</div>
-					<a href="#" class="price__item-button">Купить билет</a>
-				</div>
-				<div class="price__item">
-					<h3 class="price__item-title">Пакет участника №2</h3>
-					<ul class="price__item-list">
-						<li>2 дня конференции</li>
-						<li>Обеды и кофе брейки</li>
-						<li>Пакет материалов</li>
-						<li>Видео записи</li>
-						<li>Презентации участников</li>
-						<li>Фуршет</li>
-						<li>Размещение логотипа на сайте</li>
-					</ul>
-					<div class="price__item-cost">20 000 р.</div>
-					<a href="#" class="price__item-button">Купить билет</a>
+		<div class="price__wrapper">
+			<div class="price__inner">
+				<h2 class="price__title">Стоимость участия</h2>
+				<div class="price__box">
+					<div class="price__item">
+						<h3 class="price__item-title">Пакет участника №1</h3>
+						<ul class="price__item-list">
+							<li>2 дня конференции</li>
+							<li>Кофе брейки</li>
+							<li>Пакет материалов</li>
+							<li>Размещение логотипа на сайте</li>
+						</ul>
+						<div class="price__item-cost">12 000 р.</div>
+						<a href="#" class="price__item-button">Купить билет</a>
+					</div>
+					<div class="price__item">
+						<h3 class="price__item-title">Пакет участника №2</h3>
+						<ul class="price__item-list">
+							<li>2 дня конференции</li>
+							<li>Обеды и кофе брейки</li>
+							<li>Пакет материалов</li>
+							<li>Видео записи</li>
+							<li>Презентации участников</li>
+							<li>Фуршет</li>
+							<li>Размещение логотипа на сайте</li>
+						</ul>
+						<div class="price__item-cost">20 000 р.</div>
+						<a href="#" class="price__item-button">Купить билет</a>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
 	<section class="program section" data-name="Программа" data-color="light">
-		<div class="program__inner">
-			<h2 class="program__title">Программа конференции</h2>
-			<div class="program__box">
-				<div class="program__item">
-					<h4 class="program__item-title"><span>День №1</span> 08 ноября • 2017 года:</h4>
-					<ul class="program__item-list">
-						<li class="program__point">
-							<div class="program__point-time">9:00-10:00</div>
-							<div class="program__point-content">
-								<h5 class="program__point-title">Регистрация участников. Приветственный кофе. Экспозона</h5>
-							</div>
-						</li>
-						<li class="program__point">
-							<div class="program__point-time">10:00-11:30</div>
-							<div class="program__point-content">
-								<h5 class="program__point-title">Стратегическая сессия</h5>
-								<p class="program__point-text">«Основные тренды театрального маркетинга в России»</p>
-							</div>
-						</li>
-						<li class="program__point">
-							<div class="program__point-time">11:30-12:00</div>
-							<div class="program__point-content">
-								<h5 class="program__point-title">Кофе-брейк</h5>
-							</div>
-						</li>
-						<li class="program__point">
-							<div class="program__point-time">12:00-13:30</div>
-							<div class="program__point-content">
-								<h5 class="program__point-title">Кейс-сессия</h5>
-								<p class="program__point-text">Работа с аудиторией (изучение, привлечение новой аудитории, программы лояльности, специфика работы с разными категориями аудитории , специфика работы с аудиторией музыкальных и нишевых театров и т.п.)</p>
-							</div>
-						</li>
-						<li class="program__point">
-							<div class="program__point-time">13:30-14:00</div>
-							<div class="program__point-content">
-								<h5 class="program__point-title">Презентация</h5>
-								<p class="program__point-text">Организация билетной программы</p>
-							</div>
-						</li>
-						<li class="program__point">
-							<div class="program__point-time">14:00-15:00</div>
-							<div class="program__point-content">
-								<h5 class="program__point-title">Обед</h5>
-							</div>
-						</li>
-						<li class="program__point">
-							<div class="program__point-time">15:00-16:30</div>
-							<div class="program__point-content">
-								<h5 class="program__point-title">Кейс-сессия</h5>
-								<p class="program__point-text">Театр в интернете (социальный сети и сайт – контент, оформление, функции, обратная связь)</p>
-							</div>
-						</li>
-						<li class="program__point">
-							<div class="program__point-time">16:30-17:00</div>
-							<div class="program__point-content">
-								<h5 class="program__point-title">Кофе-брейк</h5>
-							</div>
-						</li>
-						<li class="program__point">
-							<div class="program__point-time">17:00-18:00</div>
-							<div class="program__point-content">
-								<h5 class="program__point-title">Семинар</h5>
-								<p class="program__point-text">Маркетинг без бюджета</p>
-							</div>
-						</li>
-						<li class="program__point">
-							<div class="program__point-time">18:00-19:00</div>
-							<div class="program__point-content">
-								<h5 class="program__point-title">Панельная дискуссия</h5>
-								<p class="program__point-text">СМИ и Театр – эффективное взаимодействие. </p>
-							</div>
-						</li>
-					</ul>
-				</div>
-				<div class="program__item">
-					<h4 class="program__item-title"><span>День №2</span> 09 ноября • 2017 года:</h4>
-					<ul class="program__item-list">
-						<li class="program__point">
-							<div class="program__point-time">09:30-10:00</div>
-							<div class="program__point-content">
-								<h5 class="program__point-title">Приветственный кофе. Экспозона</h5>
-							</div>
-						</li>
-						<li class="program__point">
-							<div class="program__point-time">10:00-11:30</div>
-							<div class="program__point-content">
-								<h5 class="program__point-title">Кейс-сессия</h5>
-								<p class="program__point-text">Работа со спонсорами, примеры успешных интеграций</p>
-							</div>
-						</li>
-						<li class="program__point">
-							<div class="program__point-time">11:30-12:00</div>
-							<div class="program__point-content">
-								<h5 class="program__point-title">Кофе-брейк</h5>
-							</div>
-						</li>
-						<li class="program__point">
-							<div class="program__point-time">12:00-13:30</div>
-							<div class="program__point-content">
-								<h5 class="program__point-title">Доклад с элементами дискуссии</h5>
-								<p class="program__point-text">Влияние законодательства на развитие маркетинга культуры</p>
-							</div>
-						</li>
-						<li class="program__point">
-							<div class="program__point-time">13:30-14:00</div>
-							<div class="program__point-content">
-								<h5 class="program__point-title">Презентация</h5>
-								<p class="program__point-text">Профессиональное образование для театральных маркетологов</p>
-							</div>
-						</li>
-						<li class="program__point">
-							<div class="program__point-time">14:00-15:00</div>
-							<div class="program__point-content">
-								<h5 class="program__point-title">Обед</h5>
-							</div>
-						</li>
-						<li class="program__point">
-							<div class="program__point-time">15:00-16:30</div>
-							<div class="program__point-content">
-								<h5 class="program__point-title">Панельная дискуссия</h5>
-								<p class="program__point-text">Дополнительные источники дохода театра</p>
-							</div>
-						</li>
-						<li class="program__point">
-							<div class="program__point-time">16:30-17:00</div>
-							<div class="program__point-content">
-								<h5 class="program__point-title">Кофе-брейк</h5>
-							</div>
-						</li>
-						<li class="program__point">
-							<div class="program__point-time">17:00-18:00</div>
-							<div class="program__point-content">
-								<h5 class="program__point-title">Кейс-сессия</h5>
-								<p class="program__point-text">Гастроли и фестивали - работа со зрителем</p>
-							</div>
-						</li>
-						<li class="program__point">
-							<div class="program__point-time">18:00-19:00</div>
-							<div class="program__point-content">
-								<h5 class="program__point-title">Ток-шоу</h5>
-								<p class="program__point-text">Перспективы театрального маркетинга в России</p>
-							</div>
-						</li>
-						<li class="program__point">
-							<div class="program__point-time">19:00-22:00</div>
-							<div class="program__point-content">
-								<h5 class="program__point-title">Фуршет</h5>
-							</div>
-						</li>
-					</ul>
+		<div class="program__wrapper">
+			<div class="program__inner">
+				<h2 class="program__title">Программа конференции</h2>
+				<div class="program__box">
+					<div class="program__item">
+						<h3 class="program__item-title"><span>День №1</span> 08 ноября • 2017 года:</h3>
+						<ul class="program__item-list">
+							<li class="program__point">
+								<div class="program__point-time">9:00-10:00</div>
+								<div class="program__point-content">
+									<h3 class="program__point-title">Регистрация участников. Приветственный кофе. Экспозона</h3>
+								</div>
+							</li>
+							<li class="program__point">
+								<div class="program__point-time">10:00-11:30</div>
+								<div class="program__point-content">
+									<h3 class="program__point-title">Стратегическая сессия</h3>
+									<p class="program__point-text">«Основные тренды театрального маркетинга в России»</p>
+								</div>
+							</li>
+							<li class="program__point">
+								<div class="program__point-time">11:30-12:00</div>
+								<div class="program__point-content">
+									<h3 class="program__point-title">Кофе-брейк</h3>
+								</div>
+							</li>
+							<li class="program__point">
+								<div class="program__point-time">12:00-13:30</div>
+								<div class="program__point-content">
+									<h3 class="program__point-title">Кейс-сессия</h3>
+									<p class="program__point-text">Работа с аудиторией (изучение, привлечение новой аудитории, программы лояльности, специфика работы с разными категориями аудитории , специфика работы с аудиторией музыкальных и нишевых театров и т.п.)</p>
+								</div>
+							</li>
+							<li class="program__point">
+								<div class="program__point-time">13:30-14:00</div>
+								<div class="program__point-content">
+									<h3 class="program__point-title">Презентация</h3>
+									<p class="program__point-text">Организация билетной программы</p>
+								</div>
+							</li>
+							<li class="program__point">
+								<div class="program__point-time">14:00-15:00</div>
+								<div class="program__point-content">
+									<h3 class="program__point-title">Обед</h3>
+								</div>
+							</li>
+							<li class="program__point">
+								<div class="program__point-time">15:00-16:30</div>
+								<div class="program__point-content">
+									<h3 class="program__point-title">Кейс-сессия</h3>
+									<p class="program__point-text">Театр в интернете (социальный сети и сайт – контент, оформление, функции, обратная связь)</p>
+								</div>
+							</li>
+							<li class="program__point">
+								<div class="program__point-time">16:30-17:00</div>
+								<div class="program__point-content">
+									<h3 class="program__point-title">Кофе-брейк</h3>
+								</div>
+							</li>
+							<li class="program__point">
+								<div class="program__point-time">17:00-18:00</div>
+								<div class="program__point-content">
+									<h3 class="program__point-title">Семинар</h3>
+									<p class="program__point-text">Маркетинг без бюджета</p>
+								</div>
+							</li>
+							<li class="program__point">
+								<div class="program__point-time">18:00-19:00</div>
+								<div class="program__point-content">
+									<h3 class="program__point-title">Панельная дискуссия</h3>
+									<p class="program__point-text">СМИ и Театр – эффективное взаимодействие. </p>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="program__item">
+						<h3 class="program__item-title"><span>День №2</span> 09 ноября • 2017 года:</h3>
+						<ul class="program__item-list">
+							<li class="program__point">
+								<div class="program__point-time">09:30-10:00</div>
+								<div class="program__point-content">
+									<h3 class="program__point-title">Приветственный кофе. Экспозона</h3>
+								</div>
+							</li>
+							<li class="program__point">
+								<div class="program__point-time">10:00-11:30</div>
+								<div class="program__point-content">
+									<h3 class="program__point-title">Кейс-сессия</h3>
+									<p class="program__point-text">Работа со спонсорами, примеры успешных интеграций</p>
+								</div>
+							</li>
+							<li class="program__point">
+								<div class="program__point-time">11:30-12:00</div>
+								<div class="program__point-content">
+									<h3 class="program__point-title">Кофе-брейк</h3>
+								</div>
+							</li>
+							<li class="program__point">
+								<div class="program__point-time">12:00-13:30</div>
+								<div class="program__point-content">
+									<h3 class="program__point-title">Доклад с элементами дискуссии</h3>
+									<p class="program__point-text">Влияние законодательства на развитие маркетинга культуры</p>
+								</div>
+							</li>
+							<li class="program__point">
+								<div class="program__point-time">13:30-14:00</div>
+								<div class="program__point-content">
+									<h3 class="program__point-title">Презентация</h3>
+									<p class="program__point-text">Профессиональное образование для театральных маркетологов</p>
+								</div>
+							</li>
+							<li class="program__point">
+								<div class="program__point-time">14:00-15:00</div>
+								<div class="program__point-content">
+									<h3 class="program__point-title">Обед</h3>
+								</div>
+							</li>
+							<li class="program__point">
+								<div class="program__point-time">15:00-16:30</div>
+								<div class="program__point-content">
+									<h3 class="program__point-title">Панельная дискуссия</h3>
+									<p class="program__point-text">Дополнительные источники дохода театра</p>
+								</div>
+							</li>
+							<li class="program__point">
+								<div class="program__point-time">16:30-17:00</div>
+								<div class="program__point-content">
+									<h3 class="program__point-title">Кофе-брейк</h3>
+								</div>
+							</li>
+							<li class="program__point">
+								<div class="program__point-time">17:00-18:00</div>
+								<div class="program__point-content">
+									<h3 class="program__point-title">Кейс-сессия</h3>
+									<p class="program__point-text">Гастроли и фестивали - работа со зрителем</p>
+								</div>
+							</li>
+							<li class="program__point">
+								<div class="program__point-time">18:00-19:00</div>
+								<div class="program__point-content">
+									<h3 class="program__point-title">Ток-шоу</h3>
+									<p class="program__point-text">Перспективы театрального маркетинга в России</p>
+								</div>
+							</li>
+							<li class="program__point">
+								<div class="program__point-time">19:00-22:00</div>
+								<div class="program__point-content">
+									<h3 class="program__point-title">Фуршет</h3>
+								</div>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
+	<section class="place section" data-name="Место проведения" data-color="light">
+		<div class="place__wrapper">
+			<div class="place__content">
+				<h2 class="place__title">Место проведения <br>конференции</h2>
+				<p class="place__subtitle">Гостиничный комплекс «Космос»</p>
+				<ul class="place__contacts">
+					<li>
+						<address>Адрес: пр-т Мира, 150, Москва, Россия, 129366</address>
+					</li>
+					<li>
+						<a href="tel:+74952341206">Телефон: +7 495 234-12-06</a>
+					</li>
+				</ul>
+			</div>
+			<div class="place__map" id="map"></div>
+		</div>
+	</section>
+
+	<section class="parthners section" data-name="Партнеры" data-color="light">
+		<div class="parthners__wrapper">
+			<div class="parthners__content">
+				<h2 class="parthners__title">Партнеры конференции</h2>
+				<p class="parthners__subtitle">Мы всегда рады партнерству</p>
+				<div class="parthners__text">
+					<p>Категории партнерских пакетов:</p>
+					<ul>
+						<li>Стратегический партнер</li>
+						<li>Официальный партнер</li>
+						<li>Технический партнер</li>
+						<li>Партнер деловой программы</li>
+						<li>Партнер конференции</li>
+					</ul>
+					<p>Партнерские пакеты разрабатываются индивидуально для решения конкретных задач каждого партнера. <br>Большой опыт интеграции брендов в события и качественная работа с аудиторией – основа сотрудничества. <br><b>Мы открыты к новым идеям и сложным задачам.</b></p>
+				</div>
+			</div>
+			<div class="parthners__contacts">
+				<h3 class="parthners__contacts-title">Юлия Велецкая</h3>
+				<p class="parthners__contacts-text">Спонсоры и партнеры конференции</p>
+				<ul class="parthners__contacts-list">
+					<li><a href="mailto:veleckaya@sponsorforum.ru">veleckaya@sponsorforum.ru</a></li>
+					<li><a href="tel:+79036906369">+7 (903) 690 63 69</a></li>
+					<li><a href="tel:+74997042484">+7 (499) 704 24 84</a></li>
+				</ul>
+				<a href="#" class="parthners__contacts-button">Стать партнером</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="organizers section" data-name="Организаторы" data-color="light">
+		<div class="organizers__wrapper">
+			<div class="organizers__content">
+				<h2 class="organizers__title">Организаторы</h2>
+				<p class="organizers__text">Организатор конференции – компания <br>Strategium Сonference- один из ведущих <br>организаторов международных деловых <br>мероприятий в России.</p>
+				<h3 class="organizers__subtitle"><a href="http://strategiumgroup.ru/" target="_blank">strategiumgroup.ru</a></h3>
+			</div>
+			<div class="organizers__events">
+				<figure class="organizers__events-logo">
+					<img src="img/img-events-logo.png" alt="">
+				</figure>
+				<p class="organizers__events-text"><b>Strategium Сonference</b> – это <strong>9 мероприятий</strong> с привлечением участников из <strong>13 стран</strong>, <strong>386 спикеров</strong> (ведущие мировые и отечественные отраслевые эксперты), <strong>около 3000 делегатов и более 140 партнеров.</strong></p>
+				<h3 class="organizers__events-subtitle">Наши мероприятия:</h3>
+				<div class="organizers__events-box">
+					<a href="#" class="organizers__events-item" target="_blank">
+						<img src="img/img-organizers-events1.png" alt="">
+					</a>
+					<a href="#" class="organizers__events-item" target="_blank">
+						<img src="img/img-organizers-events2.png" alt="">
+					</a>
+					<a href="#" class="organizers__events-item" target="_blank">
+						<img src="img/img-organizers-events3.png" alt="">
+					</a>
+					<a href="#" class="organizers__events-item" target="_blank">
+						<img src="img/img-organizers-events4.png" alt="">
+					</a>
+					<a href="#" class="organizers__events-item" target="_blank">
+						<img src="img/img-organizers-events5.png" alt="">
+					</a>
+					<a href="#" class="organizers__events-item" target="_blank">
+						<img src="img/img-organizers-events6.png" alt="">
+					</a>
+					<a href="#" class="organizers__events-item" target="_blank">
+						<img src="img/img-organizers-events7.png" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="direction section" data-name="Дирекция" data-color="light">
+		<div class="direction__wrapper">
+			<div class="direction__content">
+				<h2 class="direction__title">Дирекция</h2>
+				<div class="direction__box">
+					<div class="direction__item">
+						<figure class="direction__img">
+							<img src="img/img-direction1.png" alt="">
+						</figure>
+						<div class="direction__text">
+							<h3 class="direction__name">Артем Милаков</h3>
+							<p class="direction__position">Директор конференции</p>
+							<ul class="direction__contacts">
+								<li><a href="mailto:milakov@sponsorforum.ru">milakov@sponsorforum.ru</a></li>
+								<li><a href="tel:+79038240465">+7 (903) 824 04 65</a></li>
+								<li><a href="tel:+74997042484">+7 (499) 704 24 84</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="direction__item">
+						<figure class="direction__img">
+							<img src="img/img-direction2.png" alt="">
+						</figure>
+						<div class="direction__text">
+							<h3 class="direction__name">Юлия Велецкая</h3>
+							<p class="direction__position">Работа со спонсорами и партнерами</p>
+							<ul class="direction__contacts">
+								<li><a href="mailto:veleckaya@sponsorforum.ru">veleckaya@sponsorforum.ru</a></li>
+								<li><a href="tel:+79036906369">+7 (903) 690 63 69</a></li>
+								<li><a href="tel:+74997042484">+7 (499) 704 24 84</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="direction__item">
+						<figure class="direction__img">
+							<img src="img/img-direction3.png" alt="">
+						</figure>
+						<div class="direction__text">
+							<h3 class="direction__name">Ольга Гущина</h3>
+							<p class="direction__position">Спикеры конференции</p>
+							<ul class="direction__contacts">
+								<li><a href="mailto:guschina@sponsorforum.ru">guschina@sponsorforum.ru</a></li>
+								<li><a href="tel:+79657269815">+7 (965) 726 98 15</a></li>
+								<li><a href="tel:+74997042484">+7 (499) 704 24 84</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="direction__item">
+						<figure class="direction__img">
+							<img src="img/img-direction4.png" alt="">
+						</figure>
+						<div class="direction__text">
+							<h3 class="direction__name">Екатерина Богатых</h3>
+							<p class="direction__position">Работа с делегатами</p>
+							<ul class="direction__contacts">
+								<li><a href="mailto:bogatykh@sponsorforum.ru">bogatykh@sponsorforum.ru</a></li>
+								<li><a href="tel:+79622015029">+7 (962) 201 50 29</a></li>
+								<li><a href="tel:+74997042484">+7 (499) 704 24 84</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<form class="direction__form">
+				<h3 class="direction__form-title">Оставьте заявку  на участие в конференции</h3>
+				<label class="direction__form-input">
+					<input type="text" placeholder="Имя">
+				</label>
+				<label class="direction__form-input">
+					<input type="text" placeholder="Телефон">
+				</label>
+				<label class="direction__form-input">
+					<input type="text" placeholder="E-mail">
+				</label>
+				<label class="direction__form-check">
+					<input type="checkbox">
+					<span>Я согласен с политикой конфиденциональности</span>
+				</label>
+				<button class="direction__form-submit" type="submit">Отправить</button>
+			</form>
+		</div>
+	</section>
+
 	<footer class="footer">
-		<figure class="footer__logo">
-			<img src="img/logo-footer.png" alt="">
-		</figure>
-		<button class="footer__button-scroll"></button>
+		<a href="#" class="footer__logo" target="_blank">
+			<img class="light" src="img/logo-footer-light.png" alt="">
+			<img class="dark" src="img/logo-footer-dark.png" alt="">
+		</a>
+		<button class="footer__button-scroll-down"></button>
+		<button class="footer__button-scroll-top"></button>
 		<div class="footer__social">
 			<a href="#">Facebook</a>
 		</div>
 	</footer>
 
 	<!-- Load Scripts Start -->
-	<script src="js/libs.js"></script>
-	<script src="js/common.js" defer></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKPEtr5nPtb8DKYXSDwdvz3xNLSDtGd70&amp;amp;sensor=false" asinc defer></script>
+	<!-- Сообщить конечному заказчику о необходимости зарегестрировать личный GOOGLE API KEY по адресу https://developers.google.com/maps/documentation/javascript/get-api-key?hl=ru#key -->
+	<script src="js/libs.js" asinc defer></script>
+	<script src="js/common.js" asinc defer></script>
 	<!-- Load Scripts End -->
 
 </body>

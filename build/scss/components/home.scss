@@ -1,6 +1,9 @@
 .home {
     background-image: url(../img/bg-home.jpg);
 }
+.home__wrapper {
+    @extend .wrapper;
+}
 .home__inner {
     @extend .inner;
 }
@@ -31,18 +34,19 @@
     color: $red;
 }
 .home__title {
-    margin: 3vh 0 0 0;
+    margin: 3rem 0 0 0;
     font-size: 6rem;
     line-height: 1;
     text-transform: uppercase;
     color: $beige;
+    word-wrap: break-word;
     strong {
         font-size: 12rem;
         color: $red;
     }
 }
 .home__text {
-    margin: 2vh 0 0 0;
+    margin: 2rem 0 0 0;
     font-size: 2rem;
     font-weight: 600;
     letter-spacing: .07em;
@@ -51,6 +55,69 @@
 }
 .home__button {
     @extend .button;
-    margin-top: 10vh;
+    margin-top: 10rem;
     align-self: flex-start;
+}
+@media only screen and (max-width : 1600px), only screen and (max-height : 810px) {
+    .home__title {
+        font-size: 5.5rem;
+        strong {
+            font-size: 11rem;
+        }
+    }
+}
+@media only screen and (max-width : 1400px), only screen and (max-height : 760px) {
+    .home__title {
+        font-size: 5rem;
+        strong {
+            font-size: 10rem;
+        }
+    }
+}
+
+@media only screen and (max-width : 1200px), only screen and (max-height : 710px) {
+    .home__title {
+        font-size: 4.5rem;
+        strong {
+            font-size: 9rem;
+        }
+    }
+}
+
+@media only screen and (max-width : 960px), only screen and (max-height : 660px) {
+    .home__title {
+        font-size: 4rem;
+        strong {
+            font-size: 8rem;
+        }
+    }
+}
+
+@media only screen and (max-width : 768px) {
+    .home__title {
+        font-size: 3.5rem;
+        strong {
+            font-size: 7rem;
+        }
+    }
+}
+
+@media only screen and (max-width : 640px) {
+    .home__title {
+        font-size: 3rem;
+        strong {
+            font-size: 6rem;
+        }
+    }
+}
+
+@media only screen and (max-width : 480px) {
+    .home__inner {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width : 360px) {
+
 }

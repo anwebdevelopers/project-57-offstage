@@ -34,15 +34,18 @@ body textarea:required:valid {
 	color: #fff;
 }
 *::-webkit-scrollbar-track {
-	background-color: rgba(204,204,204, .1);
+	background-color: #3a3a3a;
+	transition: all .5s ease;
 }
 *::-webkit-scrollbar {
 	width: .6rem;
 	height: .6rem;
-	background-color: rgba(204,204,204, .1);
+	background-color: #3a3a3a;
+	transition: all .5s ease;
 }
 *::-webkit-scrollbar-thumb {
-	background-color: rgba(0,0,0, .6);
+	background-color: #222;
+	transition: all .5s ease;
 }
 body::-webkit-scrollbar {
 	width: 1rem;
@@ -56,13 +59,11 @@ body::-webkit-scrollbar {
 }
 
 html {
-	height: 100%;
 	font-size: 10px;
 }
 body {
 	position: relative;
 	min-width: 320px;
-	height: 100%;
 	margin: 0;
 	padding: 0;
 	font-size: 1.8rem;
@@ -92,6 +93,7 @@ body {
 		right: 10rem;
 	}
 	&[data-color="light"] {
+
 		&:before, &:after {
 			background-color: #000;
 		}
@@ -110,8 +112,7 @@ a {
 	color: $red;
 }
 .section {
-	min-height: 100%;
-	padding: 10rem;
+
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -121,18 +122,30 @@ a {
 		background-color: #3e3a38;
 	}
 }
+.wrapper {
+	flex: 0 0 auto;
+	width: 100%;
+	padding: 10rem;
+
+	display: flex;
+}
 .inner {
 	flex: 0 0 auto;
     width: 100%;
-	padding: 6vh 6%;
+	padding: 4rem 6%;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+	>* {
+		flex: 0 0 auto;
+	}
 }
 .title {
 	margin: 0;
 	line-height: 1;
+	word-wrap: break-word;
 }
 h2.title {
 	font-size: 4.5rem;
@@ -141,22 +154,25 @@ h2.title {
 		color: $red;
 	}
 }
-h3.title {
-	font-size: 3.5rem;
-}
-h4.title {
-	font-size: 2.5rem;
-}
+// h3.title {
+// 	font-size: 3.5rem;
+// }
+// h4.title {
+// 	font-size: 2.5rem;
+// }
+// h5.title {
+// 	font-size: 1.8rem;
+// }
 .button {
 	@include btn;
 	position: relative;
-	margin-right: 6rem;
 	padding: 2rem 4rem;
 	box-shadow: inset 0 0 0 3px $beige;
 	color: #fff;
 	font-size: 1.8rem;
 	font-family: inherit;
 	background-color: $red;
+	transition: all .5s ease;
 	&:before {
 		content: '';
 		position: absolute;
@@ -182,6 +198,7 @@ h4.title {
 		transition: all .5s ease;
 	}
 	&:hover, &:active {
+		margin-right: 6rem;
 		&:before {
 			width: 6.6rem;
 		}
@@ -191,31 +208,44 @@ h4.title {
 		}
 	}
 }
-@media only screen and (max-width : 1600px), only screen and (max-height : 820px) {
+@media only screen and (max-width : 1600px), only screen and (max-height : 810px) {
 	html {
 		font-size: 9.5px;
 	}
 }
-@media only screen and (max-width : 1400px), only screen and (max-height : 770px) {
+@media only screen and (max-width : 1400px), only screen and (max-height : 760px) {
 	html {
 		font-size: 9px;
 	}
+	body {
+		&:before, &:after {
+			display: none;
+		}
+	}
+	.wrapper {
+		padding: 0;
+	}
+	.inner {
+		padding: 8rem 5%;
+	}
 }
 
-@media only screen and (max-width : 1200px), only screen and (max-height : 720px) {
+@media only screen and (max-width : 1200px), only screen and (max-height : 710px) {
 	html {
 		font-size: 8.5px;
 	}
 }
 
-@media only screen and (max-width : 960px), only screen and (max-height : 670px) {
+@media only screen and (max-width : 960px), only screen and (max-height : 660px) {
 	html {
 		font-size: 8px;
 	}
 }
 
 @media only screen and (max-width : 768px) {
-
+	.wrapper {
+		display: block;
+	}
 }
 
 @media only screen and (max-width : 640px) {
@@ -223,7 +253,9 @@ h4.title {
 }
 
 @media only screen and (max-width : 480px) {
-
+	h2.title {
+		font-size: 4rem;
+	}
 }
 
 @media only screen and (max-width : 360px) {
@@ -241,6 +273,11 @@ h4.title {
 @import "components/themes.scss";
 @import "components/speakers.scss";
 @import "components/price.scss";
+@import "components/program.scss";
+@import "components/place.scss";
+@import "components/parthners.scss";
+@import "components/organizers.scss";
+@import "components/direction.scss";
 @import "components/footer.scss";
 
 //@import "build/scss/components/magnific-popup.scss";

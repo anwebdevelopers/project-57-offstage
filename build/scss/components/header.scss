@@ -6,14 +6,19 @@
     right: 10rem;
     height: 10rem;
     color: #fff;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .header__button-menu {
     @include btn;
-    position: absolute;
+    flex: 0 0 auto;
+    position: relative;
     z-index: 1;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    // left: 0;
+    // top: 50%;
+    // transform: translateY(-50%);
     height: 2.2rem;
     padding: 0 0 0 4rem;
     font-size: 1.6rem;
@@ -115,15 +120,16 @@
     }
 }
 .header__callback {
-    position: absolute;
-    z-index: 1;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    flex: 0 0 auto;
+    position: relative;
+    // right: 0;
+    // top: 50%;
+    // transform: translateY(-50%);
 
     font-size: 1.6rem;
     font-weight: 500;
     letter-spacing: .05em;
+    text-align: right;
 }
 .header__callback-link {
     text-decoration: none;
@@ -214,4 +220,76 @@ body[data-color="light"] {
             }
         }
     }
+}
+
+@media only screen and (max-width : 1600px), only screen and (max-height : 810px) {
+
+}
+@media only screen and (max-width : 1400px), only screen and (max-height : 760px) {
+    body {
+        margin: 8rem 0 0 0;
+    }
+    .header {
+        left: 0;
+        right: 0;
+        height: 8rem;
+        padding: 0 2rem;
+        background-color: #23181C;
+        transition: all 0.5s ease;
+    }
+    .pagination {
+        display: none;
+    }
+}
+
+@media only screen and (max-width : 1200px), only screen and (max-height : 710px) {
+
+}
+
+@media only screen and (max-width : 960px), only screen and (max-height : 660px) {
+    .header__callback-link,
+    .header__callback-button {
+        display: block;
+    }
+}
+
+@media only screen and (max-width : 768px) {
+
+}
+
+@media only screen and (max-width : 640px) {
+
+}
+
+@media only screen and (max-width : 480px) {
+    body {
+        margin: 6rem 0 0 0;
+    }
+    .header {
+        height: 6rem;
+        // padding: 2rem 2rem 0 2rem;
+        // flex-wrap: wrap;
+    }
+    .header__logo {
+        // position: relative;
+        // order: 1;
+        // width: calc(100% + 4rem);
+        // margin: 0 -2rem;
+        svg {
+            width: 12.34rem;
+            height: 5rem;
+        }
+    }
+    .header__callback {
+        display: none;
+    }
+    .header__button-menu {
+        font-size: 0;
+        margin: 0 0 0 auto;
+        padding: 0 0 0 3rem;
+    }
+}
+
+@media only screen and (max-width : 360px) {
+
 }

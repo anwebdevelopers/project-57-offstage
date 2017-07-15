@@ -2,6 +2,9 @@
     background-image: url(../img/bg-participants.png);
     color: #000;
 }
+.participants__wrapper {
+    @extend .wrapper;
+}
 .participants__inner {
     @extend .inner;
     background-image: url(../img/bg-participants-inner.png);
@@ -13,7 +16,7 @@
     @extend .title;
 }
 .participants__list {
-    margin: 4vh 50% 0 0;
+    margin: 3rem 50% 0 0;
     padding: 0;
     list-style: none;
 
@@ -22,7 +25,7 @@
     li {
         position: relative;
         padding: 0 0 0 2rem;
-        margin: 1vh 0 0 0;
+        margin: .5rem 0 0 0;
         &:first-child {
             margin-top: 0;
         }
@@ -35,4 +38,41 @@
             border-left: .7rem solid $red;
         }
     }
+}
+
+@media only screen and (max-width : 1600px), only screen and (max-height : 810px) {
+
+}
+@media only screen and (max-width : 1400px), only screen and (max-height : 760px) {
+
+}
+
+@media only screen and (max-width : 1200px), only screen and (max-height : 710px) {
+
+}
+
+@media only screen and (max-width : 960px), only screen and (max-height : 660px) {
+
+}
+
+@media only screen and (max-width : 768px) {
+
+}
+
+@media only screen and (max-width : 640px) {
+    .participants__inner {
+        background: none;
+    }
+    .participants__list {
+        margin: 3rem 0 0 0;
+
+    }
+}
+
+@media only screen and (max-width : 480px) {
+
+}
+
+@media only screen and (max-width : 360px) {
+
 }

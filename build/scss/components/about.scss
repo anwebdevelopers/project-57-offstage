@@ -1,16 +1,23 @@
 .about {
 
 }
+.about__wrapper {
+    @extend .wrapper;
+}
 .about__content {
     flex: 0 0 auto;
     width: 60%;
-    padding: 6vh 6%;
+    padding: 4rem 6%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .about__title {
     @extend .title;
 }
 .about__text {
-    margin: 6vh 0 0 0;
+    margin: 3rem 0 0 0;
     font-size: 2rem;
     font-weight: 500;
     > :first-child {
@@ -24,7 +31,7 @@
         }
     }
     p {
-        margin: 4vh 0 0 0;
+        margin: 2rem 0 0 0;
     }
     strong {
         color: $red;
@@ -33,12 +40,16 @@
 .about__form {
     flex: 0 0 auto;
     width: 40%;
-    padding: 8vh 3%;
+    padding: 4rem 3%;
     color: #fff;
     background-image: url(../img/bg-about-form.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .about__form-title {
     @extend .form__title;
@@ -54,4 +65,48 @@
 }
 .about__form-submit {
     @extend .form__submit;
+    align-self: flex-start;
+}
+
+@media only screen and (max-width : 1600px), only screen and (max-height : 810px) {
+
+}
+@media only screen and (max-width : 1400px), only screen and (max-height : 760px) {
+    .about__content {
+        padding: 8rem 6%;
+    }
+    .about__form {
+        padding: 8rem 3%;
+    }
+}
+
+@media only screen and (max-width : 1200px), only screen and (max-height : 710px) {
+
+}
+
+@media only screen and (max-width : 960px), only screen and (max-height : 660px) {
+
+}
+
+@media only screen and (max-width : 768px) {
+    .about__content {
+        padding: 8rem 5%;
+        width: auto;
+    }
+    .about__form {
+        padding: 8rem 5%;
+        width: auto;
+    }
+}
+
+@media only screen and (max-width : 640px) {
+
+}
+
+@media only screen and (max-width : 480px) {
+
+}
+
+@media only screen and (max-width : 360px) {
+
 }

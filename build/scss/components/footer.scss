@@ -8,20 +8,37 @@
     border-top: 4px solid $red;
     transition: border-color .5s ease;
     color: #fff;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .footer__logo {
     margin: 0;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    position: relative;
+    display: block;
+    text-decoration: none;
+    // position: absolute;
+    // left: 0;
+    // top: 50%;
+    // transform: translateY(-50%);
     img {
         max-width: 100%;
         width: auto;
         height: auto;
+        transition: all .5s ease;
+    }
+    .light {
+
+    }
+    .dark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
     }
 }
-.footer__button-scroll {
+.footer__button-scroll-down {
     @include btn;
     position: absolute;
     left: 50%;
@@ -31,16 +48,32 @@
     height: 1.8rem;
     border-left: 1px solid $beige;
     border-bottom: 1px solid $beige;
-    transition: all .5s ease;
+    transition: border-color .5s ease;
+    &:hover, &:active {
+        border-color: $red;
+    }
+}
+.footer__button-scroll-top {
+    @include btn;
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(135deg);
+    width: 1.8rem;
+    height: 1.8rem;
+    border-left: 1px solid $beige;
+    border-bottom: 1px solid $beige;
+    transition: border-color .5s ease;
     &:hover, &:active {
         border-color: $red;
     }
 }
 .footer__social {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    // position: absolute;
+    // right: 0;
+    // top: 50%;
+    // transform: translateY(-50%);
 
     font-size: 1.4rem;
     font-weight: 500;
@@ -59,10 +92,66 @@ body[data-color="light"] {
         color: #000;
         border-color: #000;
     }
-    .footer__button-scroll {
+    .footer__logo {
+        .light {
+            opacity: 0;
+        }
+        .dark {
+            opacity: 1;
+        }
+    }
+    .footer__button-scroll-down,
+    .footer__button-scroll-top {
         border-color: $red;
         &:hover, &:active {
             border-color: #000;
         }
     }
+}
+
+@media only screen and (max-width : 1600px), only screen and (max-height : 810px) {
+
+}
+@media only screen and (max-width : 1400px), only screen and (max-height : 760px) {
+    .footer {
+        position: relative;
+        z-index: 0;
+        left: auto;
+        right: auto;
+        height: 8rem;
+        padding: 0 2rem;
+        background-color: #23181C;
+    }
+    .footer__button-scroll-down {
+        display: none;
+    }
+    .footer__button-scroll-top {
+        display: block !important;
+    }
+}
+
+@media only screen and (max-width : 1200px), only screen and (max-height : 710px) {
+
+}
+
+@media only screen and (max-width : 960px), only screen and (max-height : 660px) {
+
+}
+
+@media only screen and (max-width : 768px) {
+
+}
+
+@media only screen and (max-width : 640px) {
+
+}
+
+@media only screen and (max-width : 480px) {
+    .footer {
+        height: 6rem;
+    }
+}
+
+@media only screen and (max-width : 360px) {
+
 }
