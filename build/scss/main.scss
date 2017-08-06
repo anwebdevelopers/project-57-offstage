@@ -80,17 +80,17 @@ body {
 		content: '';
 		position: fixed;
 		z-index: 1000;
-		top: 10rem;
-		bottom: 10rem;
+		top: 8rem;
+		bottom: 8rem;
 		width: 4px;
 		background-color: $red;
 		transition: all .5s ease;
 	}
 	&:before {
-		left: 10rem;
+		left: 8rem;
 	}
 	&:after {
-		right: 10rem;
+		right: 8rem;
 	}
 	&[data-color="light"] {
 
@@ -125,7 +125,7 @@ a {
 .wrapper {
 	flex: 0 0 auto;
 	width: 100%;
-	padding: 10rem;
+	padding: 8rem;
 
 	display: flex;
 }
@@ -210,12 +210,18 @@ h2.title {
 }
 @media only screen and (max-width : 1600px), only screen and (max-height : 810px) {
 	html {
-		font-size: 9.5px;
+		font-size: 9px;
 	}
 }
-@media only screen and (max-width : 1400px), only screen and (max-height : 760px) {
+@media only screen and (max-width : 1400px), only screen and (max-height : 720px) {
 	html {
-		font-size: 9px;
+		font-size: 8px;
+	}
+}
+
+@media only screen and (max-width : 1200px), only screen and (max-height : 620px) {
+	html {
+		font-size: 7px;
 	}
 	body {
 		&:before, &:after {
@@ -230,16 +236,10 @@ h2.title {
 	}
 }
 
-@media only screen and (max-width : 1200px), only screen and (max-height : 710px) {
-	html {
-		font-size: 8.5px;
-	}
-}
-
-@media only screen and (max-width : 960px), only screen and (max-height : 660px) {
-	html {
-		font-size: 8px;
-	}
+@media only screen and (max-width : 960px) {
+	// html {
+	// 	font-size: 9px;
+	// }
 }
 
 @media only screen and (max-width : 768px) {
